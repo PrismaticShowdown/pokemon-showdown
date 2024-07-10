@@ -136,6 +136,10 @@ export const Tags: {[id: IDEntry]: TagData} = {
 		name: "Uber",
 		speciesFilter: species => species.tier === 'Uber' || species.tier === '(Uber)' || species.tier === 'AG',
 	},
+	oubl: {
+		name: "OUBL",
+		speciesFilter: species => species.tier === 'OUBL',
+	},
 	ou: {
 		name: "OU",
 		speciesFilter: species => species.tier === 'OU' || species.tier === '(OU)',
@@ -156,6 +160,14 @@ export const Tags: {[id: IDEntry]: TagData} = {
 		name: "RU",
 		speciesFilter: species => species.tier === 'RU',
 	},
+	hubl: {
+		name: "HUBL",
+		speciesFilter: species => species.tier === 'HUBL',
+	},
+	hu: {
+		name: "HU",
+		speciesFilter: species => species.tier === 'HU',
+	},
 	nubl: {
 		name: "NUBL",
 		speciesFilter: species => species.tier === 'NUBL',
@@ -163,6 +175,14 @@ export const Tags: {[id: IDEntry]: TagData} = {
 	nu: {
 		name: "NU",
 		speciesFilter: species => species.tier === 'NU',
+	},
+	aubl: {
+		name: "PUBL",
+		speciesFilter: species => species.tier === 'PUBL',
+	},
+	au: {
+		name: "AU",
+		speciesFilter: species => species.tier === 'AU',
 	},
 	publ: {
 		name: "PUBL",
@@ -179,6 +199,14 @@ export const Tags: {[id: IDEntry]: TagData} = {
 	zu: {
 		name: "ZU",
 		speciesFilter: species => species.tier === '(PU)' || species.tier === 'ZU',
+	},
+	fubl: {
+		name: "FUBL",
+		speciesFilter: species => species.tier === 'FUBL',
+	},
+	fu: { //this is unintentionally vulgar but because its slightly hilarious we're keeping it. it stands for "functionally unusable"
+		name: "FU",
+		speciesFilter: species => species.tier === '(ZU)' || species.tier === 'FU',
 	},
 	nfe: {
 		name: "NFE",

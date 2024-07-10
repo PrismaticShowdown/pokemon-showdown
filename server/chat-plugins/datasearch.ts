@@ -628,12 +628,16 @@ function runDexsearch(target: string, cmd: string, canAll: boolean, message: str
 	const mod = Dex.mod(usedMod || 'base');
 	const allTiers: {[k: string]: TierTypes.Singles | TierTypes.Other} = Object.assign(Object.create(null), {
 		anythinggoes: 'AG', ag: 'AG',
-		uber: 'Uber', ubers: 'Uber', ou: 'OU',
+		uber: 'Uber', ubers: 'Uber', 
+		oubl: 'OUBL', ou: 'OU',
 		uubl: 'UUBL', uu: 'UU',
 		rubl: 'RUBL', ru: 'RU',
+		hubl: 'HUBL', hu: 'HU',
 		nubl: 'NUBL', nu: 'NU',
+		aubl: 'AUBL', au: 'AU',
 		publ: 'PUBL', pu: 'PU',
 		zubl: 'ZUBL', zu: 'ZU',
+		fubl: 'FUBL', fu: 'FU',
 		nfe: 'NFE',
 		lc: 'LC',
 		cap: 'CAP', caplc: 'CAP LC', capnfe: 'CAP NFE',
