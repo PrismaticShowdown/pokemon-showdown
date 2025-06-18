@@ -40,7 +40,8 @@ type PokemonSet = import('./teams').PokemonSet;
 
 declare namespace TierTypes {
 	export type Singles = "AG" | "Uber" | "(Uber)" | "OU" | "(OU)" | "UUBL" | "UU" | "RUBL" | "RU" | "NUBL" | "NU" |
-		"(NU)" | "PUBL" | "PU" | "(PU)" | "ZUBL" | "ZU" | "NFE" | "LC";
+		"(NU)" | "PUBL" | "PU" | "(PU)" | "ZUBL" | "ZU" | "IBL" | "DI" | "IIBL" | "DII" | "IIIBL" | "DIII" | "IVBL" | "DIV" | "VBL" | "DV" | "VIBL" |
+	 "DVI" | "VIIBL" | "DVII" | "VIIIBL" | "DVIII" | "IXBL" | "DIX" | "XBL" | "DX" | "XIBL" | "DXI" | "XIIBL" | "DXII" | "(DXII)" | "NFE" | "LC";
 	export type Doubles = "DUber" | "(DUber)" | "DOU" | "(DOU)" | "DBL" | "DUU" | "(DUU)" | "NFE" | "LC";
 	export type Other = "Unreleased" | "Illegal" | "CAP" | "CAP NFE" | "CAP LC";
 }

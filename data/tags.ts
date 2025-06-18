@@ -205,6 +205,103 @@ export const Tags: { [id: IDEntry]: TagData } = {
 		speciesFilter: species => species.tier === 'AG',
 	},
 
+	//New Tiers
+	di: {
+		name: "DI",
+		speciesFilter: species => species.tier === 'DI',
+	},
+	dii: {
+		name: "DII",
+		speciesFilter: species => species.tier === 'DII',
+	},
+	diii: {
+		name: "DIII",
+		speciesFilter: species => species.tier === 'DIII',
+	},
+	div: {
+		name: "DIV",
+		speciesFilter: species => species.tier === 'DIV',
+	},
+	dv: {
+		name: "DV",
+		speciesFilter: species => species.tier === 'DV',
+	},
+	dvi: {
+		name: "DVI",
+		speciesFilter: species => species.tier === 'DVI',
+	},
+	dvii: {
+		name: "DVII",
+		speciesFilter: species => species.tier === 'DVII',
+	},
+	dviii: {
+		name: "DVIII",
+		speciesFilter: species => species.tier === 'DVIII',
+	},
+	dix: {
+		name: "DIX",
+		speciesFilter: species => species.tier === 'DIX',
+	},
+	dx: {
+		name: "DX",
+		speciesFilter: species => species.tier === 'DX',
+	},
+	dxi: {
+		name: "DXI",
+		speciesFilter: species => species.tier === 'DXI',
+	},
+	dxii: {
+		name: "DXII",
+		speciesFilter: species => species.tier === 'DXII',
+	},
+	ibl: {
+		name: "IBL",
+		speciesFilter: species => species.tier === 'IBL',
+	},
+	iibl: {
+		name: "BLII",
+		speciesFilter: species => species.tier === 'IIBL',
+	},
+	iiibl: {
+		name: "IIIBL",
+		speciesFilter: species => species.tier === 'IIIBL',
+	},
+	ivbl: {
+		name: "IVBL",
+		speciesFilter: species => species.tier === 'IVBL',
+	},
+	vbl: {
+		name: "VBL",
+		speciesFilter: species => species.tier === 'VBL',
+	},
+	vibl: {
+		name: "VIBL",
+		speciesFilter: species => species.tier === 'VIBL',
+	},
+	viibl: {
+		name: "VIIBL",
+		speciesFilter: species => species.tier === 'VIIBL',
+	},
+	viiibl: {
+		name: "VIIIBL",
+		speciesFilter: species => species.tier === 'VIIIBL',
+	},
+	ixbl: {
+		name: "IXBL",
+		speciesFilter: species => species.tier === 'IXBL',
+	},
+	xbl: {
+		name: "XBL",
+		speciesFilter: species => species.tier === 'XBL',
+	},
+	xibl: {
+		name: "XIBL",
+		speciesFilter: species => species.tier === 'XIBL',
+	},
+	xiibl: {
+		name: "XIIBL",
+		speciesFilter: species => species.tier === 'XIIBL',
+	},
 	// Doubles tiers
 	// -------------
 	duber: {
