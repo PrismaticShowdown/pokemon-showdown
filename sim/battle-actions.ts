@@ -205,18 +205,10 @@ export class BattleActions {
 	 * Dancer.
 	 */
 	runMove(
-		moveOrMoveName: Move | string, pokemon: Pokemon, targetLoc: number,
-		options?: {
-			sourceEffect?: Effect | null, zMove?: string, externalMove?: boolean,
-			maxMove?: string, originalTarget?: Pokemon,
-		}
+		moveOrMoveName: Move | string, pokemon: Pokemon, targetLoc: number, sourceEffect?: Effect | null,
+		zMove?: string, externalMove?: boolean, maxMove?: string, originalTarget?: Pokemon
 	) {
 		pokemon.activeMoveActions++;
-		const zMove = options?.zMove;
-		const maxMove = options?.maxMove;
-		const externalMove = options?.externalMove;
-		const originalTarget = options?.originalTarget;
-		let sourceEffect = options?.sourceEffect;
 		let target = this.battle.getTarget(pokemon, maxMove || zMove || moveOrMoveName, targetLoc, originalTarget);
 		let baseMove = this.dex.getActiveMove(moveOrMoveName);
 		const priority = baseMove.priority;
@@ -339,7 +331,7 @@ export class BattleActions {
 					targetOf1stDance :
 					pokemon;
 				const dancersTargetLoc = dancer.getLocOf(dancersTarget);
-				this.runMove(move.id, dancer, dancersTargetLoc, { sourceEffect: this.dex.abilities.get('dancer'), externalMove: true });
+				this.runMove(move.id, dancer, dancersTargetLoc, this.dex.abilities.get('dancer'), undefined, true);
 			}
 		}
 		if (noLock && pokemon.volatiles['lockedmove']) delete pokemon.volatiles['lockedmove'];
@@ -350,6 +342,24 @@ export class BattleActions {
 			// In gen 4, the outermost move is considered the last move for Copycat
 			this.battle.activeMove = oldActiveMove;
 		}
+	}
+
+	runAdditionalMove(move: Move, pokemon: Pokemon, target: Pokemon, moveMutations?: any) {
+		if (pokemon.usedExtraMove) return;
+		if (pokemon.fainted || pokemon.faintQueued) return;
+		pokemon.usedExtraMove = true;
+		type MutableMove = {-readonly [K in keyof Move]: Move[K]};
+		const nextMutableMove: MutableMove = move;
+		if (moveMutations) {
+			for (const key of Object.keys(moveMutations)) {
+				(nextMutableMove as any)[key] = moveMutations[key];
+			}
+		}
+		const nextMove: Move = nextMutableMove;
+		const targetLoc = pokemon.getLocOf(target);
+		this.runMove(nextMove, pokemon, targetLoc, null, undefined, true);
+		pokemon.usedExtraMove = false;
+		pokemon.activeMoveActions--;
 	}
 	/**
 	 * useMove is the "inside" move caller. It handles effects of the
@@ -538,7 +548,7 @@ export class BattleActions {
 				}
 			}
 		}
-
+		move.succeeded = true;
 		return true;
 	}
 	/** NOTE: includes single-target moves */
@@ -1666,6 +1676,10 @@ export class BattleActions {
 
 		const level = source.level;
 
+		const statAttacker = move.overrideOffensivePokemon === 'target' ? target : source;
+			// For unaware
+		const statAttackerOpposite = move.overrideOffensivePokemon === 'target' ? source : target;
+
 		const attacker = move.overrideOffensivePokemon === 'target' ? target : source;
 		const defender = move.overrideDefensivePokemon === 'source' ? source : target;
 
@@ -1696,6 +1710,17 @@ export class BattleActions {
 			this.battle.debug('Negating (sp)def boost/penalty.');
 			defBoosts = 0;
 		}
+
+		let bonusStat = 0;
+			for (const [secondaryStat, secondaryMultiplier] of move.secondaryOffensiveStats || []) {
+				if (secondaryStat && secondaryMultiplier > 0 && this.dex.getActiveMove(move.baseMove || "")?.overrideOffensiveStat !== "def") {
+					let secondaryBoost = statAttacker.boosts[secondaryStat];
+					if (ignoreNegativeOffensive && secondaryBoost < 0) secondaryBoost = 0;
+					else if (move.ignoreOffensive) secondaryBoost = 0;
+					else if (secondaryStat === attackStat) secondaryBoost = 0;
+					bonusStat += statAttacker.calculateStat(secondaryStat, secondaryBoost, secondaryMultiplier, statAttacker, statAttackerOpposite, move, 0);
+				}
+			}
 
 		let attack = attacker.calculateStat(attackStat, atkBoosts, 1, source);
 		let defense = defender.calculateStat(defenseStat, defBoosts, 1, target);

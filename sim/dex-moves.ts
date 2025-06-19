@@ -249,6 +249,7 @@ export interface MoveData extends EffectData, MoveEventMethods, HitEffect {
 	 * uses modifiers that match the new stat
 	 */
 	overrideDefensiveStat?: StatIDExceptHP;
+	secondaryOffensiveStats?: [[StatIDExceptHP, number]];
 	forceSTAB?: boolean;
 	ignoreAbility?: boolean;
 	ignoreAccuracy?: boolean;
@@ -352,6 +353,7 @@ export interface ActiveMove extends MutableMove {
 	typeChangerBoosted?: Effect;
 	willChangeForme?: boolean;
 	infiltrates?: boolean;
+	succeeded?: boolean;
 	ruinedAtk?: Pokemon;
 	ruinedDef?: Pokemon;
 	ruinedSpA?: Pokemon;

@@ -192,6 +192,7 @@ export interface EventMethods {
 	) => boolean | null | void;
 	onFoeSetWeather?: (this: Battle, target: Pokemon, source: Pokemon, weather: Condition) => boolean | void;
 	onFoeStallMove?: (this: Battle, pokemon: Pokemon) => boolean | void;
+	onFoeSwitchIn?: (this: Battle, pokemon: Pokemon) => void;
 	onFoeSwitchOut?: (this: Battle, pokemon: Pokemon) => void;
 	onFoeTakeItem?: (
 		(this: Battle, item: Item, pokemon: Pokemon, source: Pokemon, move?: ActiveMove) => boolean | void
@@ -493,7 +494,7 @@ export interface EventMethods {
 
 export interface PokemonEventMethods extends EventMethods {
 	onAllyDamagingHit?: (this: Battle, damage: number, target: Pokemon, source: Pokemon, move: ActiveMove) => void;
-	onAllyAfterEachBoost?: (this: Battle, boost: SparseBoostsTable, target: Pokemon, source: Pokemon) => void;
+	onAllyAfterEachBoost?: (this: Battle, boost: SparseBoostsTable, target: Pokemon, source: Pokemon, effectHolder: Battle | Pokemon | Side | Field) => void;
 	onAllyAfterHit?: MoveEventMethods['onAfterHit'];
 	onAllyAfterSetStatus?: (this: Battle, status: Condition, target: Pokemon, source: Pokemon, effect: Effect) => void;
 	onAllyAfterSubDamage?: MoveEventMethods['onAfterSubDamage'];
@@ -564,6 +565,7 @@ export interface PokemonEventMethods extends EventMethods {
 	onAllySetWeather?: (this: Battle, target: Pokemon, source: Pokemon, weather: Condition) => boolean | void;
 	onAllySideConditionStart?: (this: Battle, target: Pokemon, source: Pokemon, sideCondition: Condition) => void;
 	onAllyStallMove?: (this: Battle, pokemon: Pokemon) => boolean | void;
+	onAllySwitchIn?: (this: Battle, pokemon: Pokemon) => void;
 	onAllySwitchOut?: (this: Battle, pokemon: Pokemon) => void;
 	onAllyTakeItem?: (
 		(this: Battle, item: Item, pokemon: Pokemon, source: Pokemon, move?: ActiveMove) => boolean | void

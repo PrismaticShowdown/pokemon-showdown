@@ -300,6 +300,7 @@ interface ModdedBattlePokemon {
 	) => number;
 	getTypes?: (this: Pokemon, excludeAdded?: boolean, preterastallized?: boolean) => string[];
 	getWeight?: (this: Pokemon) => number;
+	getHeight?: (this: Pokemon) => number;
 	hasAbility?: (this: Pokemon, ability: string | string[]) => boolean;
 	hasItem?: (this: Pokemon, item: string | string[]) => boolean;
 	isGrounded?: (this: Pokemon, negateImmunity: boolean | undefined) => boolean | null;

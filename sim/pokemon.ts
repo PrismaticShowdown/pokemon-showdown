@@ -149,6 +149,7 @@ export class Pokemon {
 	knownType: boolean;
 	/** Keeps track of what type the client sees for this Pokemon. */
 	apparentType: string;
+	usedExtraMove = false;
 
 	/**
 	 * If the switch is called by an effect with a special switch
@@ -300,6 +301,9 @@ export class Pokemon {
 		originalSpecies?: string, // Mix and Mega
 		[key: string]: any,
 	};
+
+	heightm: any;
+
 
 	constructor(set: string | AnyObject, side: Side) {
 		this.side = side;
@@ -544,7 +548,15 @@ export class Pokemon {
 		this.speed = this.getActionSpeed();
 	}
 
-	calculateStat(statName: StatIDExceptHP, boost: number, modifier?: number, statUser?: Pokemon) {
+	calculateStat(
+		statName: StatIDExceptHP,
+		boost: number,
+		modifier?: number,
+		statUser?: Pokemon,
+		statTarget?: Pokemon,
+		move?: ActiveMove,
+		bonusStat = 0,
+	) {
 		statName = toID(statName) as StatIDExceptHP;
 		// @ts-expect-error type checking prevents 'hp' from being passed, but we're paranoid
 		if (statName === 'hp') throw new Error("Please read `maxhp` directly");
@@ -673,7 +685,10 @@ export class Pokemon {
 		const weighthg = this.battle.runEvent('ModifyWeight', this, null, null, this.weighthg);
 		return Math.max(1, weighthg);
 	}
-
+	getHeight() {
+		const heightm = this.battle.runEvent('ModifyHeight', this, null, null, this.heightm);
+		return Math.max(1, heightm);
+	}
 	getMoveData(move: string | Move) {
 		move = this.battle.dex.moves.get(move);
 		for (const moveSlot of this.moveSlots) {
@@ -715,6 +730,12 @@ export class Pokemon {
 		return this.side.foes().filter(foe => this.isAdjacent(foe));
 	}
 
+	oppositeFoe(): Pokemon | null {
+		if (this.foes().length < 1) return null;
+		if (this.foes().length === 1) return this.foes()[0];
+		return this.getAtLoc(-this.getLocOf(this));
+	}
+	
 	isAlly(pokemon: Pokemon | null) {
 		return !!pokemon && (this.side === pokemon.side || this.side.allySide === pokemon.side);
 	}
