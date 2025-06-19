@@ -29,7 +29,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] DI",
 		mod: 'gen9',
 		ruleset: ['Standard', 'Evasion Abilities Clause', 'Sleep Moves Clause', '!Sleep Clause Mod'],
-		banlist: ['Uber', 'AG', 'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock', 'Razor Fang', 'Last Respects', 'Shed Tail'],
+		banlist: ['Uber', 'IBL', 'AG', 'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock', 'Razor Fang', 'Last Respects', 'Shed Tail'],
 	},
 	{
 		name: "[Gen 9] Ubers",
@@ -41,25 +41,25 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] DII",
 		mod: 'gen9',
 		ruleset: ['[Gen 9] DI'],
-		banlist: ['OU', 'UUBL'],
+		banlist: ['DI', 'IIBL'],
 	},
 	{
 		name: "[Gen 9] DIII",
 		mod: 'gen9',
 		ruleset: ['[Gen 9] DII'],
-		banlist: ['UU', 'RUBL', 'Light Clay'],
+		banlist: ['DII', 'IIIBL', 'Light Clay'],
 	},
 	{
 		name: "[Gen 9] DIV",
 		mod: 'gen9',
 		ruleset: ['[Gen 9] DIII'],
-		banlist: ['RU', 'NUBL', 'Drought', 'Quick Claw'],
+		banlist: ['DIII', 'IVBL', 'Drought', 'Quick Claw'],
 	},
 	{
 		name: "[Gen 9] DV",
 		mod: 'gen9',
 		ruleset: ['[Gen 9] DIV'],
-		banlist: ['NU', 'PUBL', 'Damp Rock'],
+		banlist: ['DIV', 'VBL', 'Damp Rock'],
 	},
 	{
 		section: "S/V Singles",

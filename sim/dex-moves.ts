@@ -63,6 +63,21 @@ interface MoveFlags {
 	snatch?: 1; // Can be stolen from the original user and instead used by another Pokemon using Snatch.
 	sound?: 1; // Has no effect on Pokemon with the Ability Soundproof.
 	wind?: 1; // Activates the Wind Power and Wind Rider Abilities.
+	//new flags
+	air?: 1; // Air based move
+	arrow?: 1; // Arrow based move
+	bone?: 1; // Affected by Bone Based
+	counter?: 1; // Indicates move is result of an ability.
+	field?: 1; // Boosted by Field Explorer
+	hammer?: 1; // Hammer based move
+	highestDamage?: 1; // Move uses special or physical damage, whichever is more effective ex: Phton Geyser.
+	highestOffense?: 1; // Move uses highest offensive stat for damage calc ex: Shell Side Arm.
+	horn?: 1; // Power is multiplied by 1.3 when used by a Pokemon with the Ability Mighty Horn. Horn and Drill moves.
+	kick?: 1; // Power is multiplied by 1.2 when used by a Pokemon with the Ability Striker.
+	slam?: 1; // Slam based move
+	locked?: 1; // Locked moves ex: Outrage.
+	soul?: 1; // Soul based moves.
+	weather?: 1; // Negated by Weather Control
 }
 
 export interface HitEffect {
