@@ -889,93 +889,45 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 	},
 	//New Statuses
 	bld: {
-		name: "bld",
-		effectType: "Status",
-		/**
-		 * This is called when the status starts and is responsible for populating status activation messages on screen.
-		 * It handles the status being activated by either an ability or a move secondary effect.
-		 * The target is the pokemon being statused, the source is the pokemon that caused the status.
-		 * Source effect will the ability or move that caused the status.
-		 */
-		onStart(target, source, sourceEffect) {
-			if (sourceEffect && sourceEffect.effectType === "Ability") {
-				this.add(
-					"-status",
-					target,
-					"bld",
-					`[from] ability: ${sourceEffect.name}`,
-					` [of] ${source}`
-				);
-			} else if (sourceEffect && sourceEffect.effectType === "Move") {
-				this.add(
-					"-status",
-					target,
-					"bld",
-					"[from] move: " + sourceEffect.name
-				);
-			}
-		},
-		/**
-		 * This is called right before a pokemon uses a given move.
-		 * We use this to check if a status healing move is being used on a bleeding pokemon.
-		 * If so, we block the heal but cure the bleed.
-		 * NOTE: This should cover non-self healing moves i.e. enemy or partner healing moves used on the bleeding pokemon
-		 */
-		// onBeforeMove(source, target, move) {
-		// 	if (move.flags['heal'] && move.category === "Status") {
-		// 		/// Outright block status healing moves.
-		// 		this.add('cant', target, 'status: bleed', move);
-		// 		target.cureStatus();
-		// 		return false;
-		// 	}
-		// },
-		/**
-		 * This is called right before a pokemon is healed by any source.
-		 * In this case, we just prevent the healing.
-		 * In most cases, you want to provide a message by using this.add("cant", ...)
-		 * But since this is from a status effect and blocks secondary effects from items, moves like giga drain, etc...
-		 * The expected behavior is more nuanced.
-		 * It's possible that some conditional messages may be desired here, but more work is needed to iron out all those details.
-		 */
-		onTryHeal(amount, target, source, effect) {
-			if (effect.effectType === "Condition" && effect.id === "wish") {
-				this.add("-message", `${target.name}'s wish cured it's bleed!`);
-				target.cureStatus(true);
-			}
-
-			if (effect.effectType === "Move") {
-				const move = effect as Move;
-
-				if (move.basePower < 0) target.cureStatus();
-				if (move.category === "Status") target.cureStatus();
-			}
-
-			return false;
-		},
-		/**
-		 * This should negate the boosts of this pokemon while bleed is inflicted.
-		 */
-		onModifyBoost(boosts: SparseBoostsTable, pokemon: Pokemon) {
-			for (const stat of Object.keys(boosts) as BoostID[]) {
-			  if (boosts[stat]! > 0) {
-				boosts[stat] = 0;
-			  }
-			}
-		  },
-		  
-		/**
-		 * This is (believed) to be used as an order in which status/item/weather residual effects resolve at the end of the battle.
-		 * In this case, bleed was made to have the same residual order value as bleed/freeze/etc.
-		 */
-		onResidualOrder: 10,
-		/**
-		 * This is called to compute any residual (turn over turn) effects on the statused target.
-		 * Bleed simply causes 1/16 base hp chip damage every turn.
-		 */
-		onResidual(pokemon) {
-			this.damage(pokemon.baseMaxhp / 16);
-		},
+	name: 'Bleed',
+	effectType: 'Status',
+	onStart(target) {
+		this.add('-status', target, 'bld');
 	},
+	onResidualOrder: 9,
+	onResidual(pokemon) {
+		this.damage(pokemon.baseMaxhp / 16);
+	},
+	onTryHeal(damage, target, source, effect) {
+		if (effect?.id && this.dex.moves.get(effect.id).flags['heal']) {
+			this.add('-curestatus', target, 'bld');
+			target.cureStatus();
+			return 0;
+		}
+		return false;
+	},
+	onTryBoost(boosts, target, source, effect) {
+	if (effect?.effectType === 'Move') {
+		let blocked = false;
+		for (const stat in boosts) {
+			const s = stat as keyof BoostsTable;
+			if (boosts[s]! > 0) {
+				blocked = true;
+				boosts[s] = 0;
+			}
+		}
+		if (blocked) {
+			this.add('-fail', target, 'boost', '[from] bld');
+			return false;
+		}
+	}
+},
+	onImmunity(type, pokemon) {
+		if (type === 'bleed' && (pokemon.hasType('Rock') || pokemon.hasType('Ghost'))) {
+			return false;
+		}
+	},
+},
 	fbt: {
 		name: 'fbt',
 		effectType: 'Status',
