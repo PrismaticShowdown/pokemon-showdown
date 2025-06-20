@@ -1886,21 +1886,29 @@ export class BattleActions {
 	// ==================================================================
 
 	canMegaEvo(pokemon: Pokemon) {
-		const species = pokemon.baseSpecies;
-		const altForme = species.otherFormes && this.dex.species.get(species.otherFormes[0]);
-		const item = pokemon.getItem();
-		// Mega Rayquaza
-		if ((this.battle.gen <= 7 || this.battle.ruleTable.has('+pokemontag:past')) &&
-			altForme?.isMega && altForme?.requiredMove &&
-			pokemon.baseMoves.includes(toID(altForme.requiredMove)) && !item.zMove) {
-			return altForme.name;
-		}
-		// a hacked-in Megazard X can mega evolve into Megazard Y, but not into Megazard X
-		if (item.megaEvolves === species.baseSpecies && item.megaStone !== species.name) {
-			return item.megaStone;
-		}
-		return null;
+	const species = pokemon.baseSpecies;
+	const altForme = species.otherFormes && this.dex.species.get(species.otherFormes[0]);
+	const item = pokemon.getItem();
+
+	// Mega Rayquaza special case
+	if ((this.battle.gen <= 7 || this.battle.ruleTable.has('+pokemontag:past')) &&
+		altForme?.isMega && altForme?.requiredMove &&
+		pokemon.baseMoves.includes(toID(altForme.requiredMove)) && !item.zMove) {
+		return altForme.name;
 	}
+
+	// Only allow Mega Evolution if species is listed in item.itemUser
+	if (
+		item.megaEvolves === species.baseSpecies &&
+		item.megaStone !== species.name &&
+		item.itemUser?.includes(species.name)
+	) {
+		return item.megaStone;
+	}
+
+	return null;
+}
+
 
 	canUltraBurst(pokemon: Pokemon) {
 		if (['Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane'].includes(pokemon.baseSpecies.name) &&
