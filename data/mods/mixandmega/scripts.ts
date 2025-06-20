@@ -1,16 +1,25 @@
 export const Scripts: ModdedBattleScriptsData = {
 	gen: 9,
 	init() {
-		for (const i in this.data.Items) {
-			const item = this.data.Items[i];
-			if (!item.megaStone && !item.onDrive && !(item.onPlate && !item.zMove) && !item.onMemory) continue;
-			this.modData('Items', i).onTakeItem = false;
-			if (item.isNonstandard === "Past") this.modData('Items', i).isNonstandard = null;
-			if (item.megaStone) {
-				this.modData('FormatsData', this.toID(item.megaStone)).isNonstandard = null;
+	for (const i in this.data.Items) {
+		const item = this.data.Items[i];
+		if (!item.megaStone && !item.onDrive && !(item.onPlate && !item.zMove) && !item.onMemory) continue;
+
+		const modItem = this.modData('Items', i);
+		if (modItem) {
+			modItem.onTakeItem = false;
+			if (item.isNonstandard === "Past") modItem.isNonstandard = null;
+		}
+
+		if (item.megaStone) {
+			const megaID = this.toID(item.megaStone);
+			const modFormat = this.modData('FormatsData', megaID);
+			if (modFormat) {
+				modFormat.isNonstandard = null;
 			}
 		}
-	},
+	}
+},
 	start() {
 		// Deserialized games should use restart()
 		if (this.deserialized) return;
