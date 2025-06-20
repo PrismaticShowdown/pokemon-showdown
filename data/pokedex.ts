@@ -226,6 +226,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	venusaurdelta: {
 		num: 3,
 		name: "Venusaur-Delta",
+		baseSpecies: "Venusaur",
+		forme: "Delta",
 		types: ["Fairy", "Psychic"],
 		baseStats: {hp: 80, atk: 82, def: 83, spa: 100, spd: 100, spe: 80},
 		abilities: {0: "Psycho Call", H: "Regenerator"},
@@ -242,7 +244,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 3,
 		name: "Venusaur-Delta-Mega",
 		baseSpecies: "Venusaur-Delta",
-		forme: "Delta-Mega",
+		forme: "Mega",
 		types: ["Fairy", "Psychic"],
 		baseStats: {hp: 80, atk: 100, def: 123, spa: 122, spd: 120, spe: 80},
 		abilities: {0: "Hubris"},
@@ -806,6 +808,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	blastoisedelta: {
 		num: 9,
 		name: "Blastoise-Delta",
+		baseSpecies: "Blastoise",
+		forme: "Delta",
 		types: ["Dark", "Fighting"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 79, atk: 83, def: 100, spa: 85, spd: 105, spe: 78},
@@ -1295,6 +1299,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	pidgeotdelta: {
 		num: 18,
 		name: "Pidgeot-Delta",
+		baseSpecies: "Pidgeot",
+		forme: "Delta",
 		types: ["Dark", "Dragon"],
 		baseStats: {hp: 83, atk: 80, def: 75, spa: 70, spd: 70, spe: 101},
 		abilities: {0: "Intimidate", 1: "Early Bird", H: "Marvel Scale"},
@@ -10775,6 +10781,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	sunfloradelta: {
 		num: 192,
 		name: "Sunflora-Delta",
+		baseSpecies: "Sunflora",
+		forme: "Delta",
 		types: ["Fire", "Poison"],
 		baseStats: {hp: 75, atk: 85, def: 55, spa: 105, spd: 85, spe: 30},
 		abilities: {0: "Flame Body", 1: "Analytic", H: "Poison Point"},
@@ -11195,6 +11203,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	girafarigdelta: {
 		num: 203,
 		name: "Girafarig-Delta",
+		baseSpecies: "Girafarig",
+		forme: "Delta",
 		types: ["Steel", "Poison"],
 		baseStats: {hp: 70, atk: 80, def: 65, spa: 90, spd: 65, spe: 85},
 		abilities: {0: "Anger Point", 1: "Stench", H: "Intimidate"},
@@ -11587,6 +11597,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	scizordelta: {
 		num: 212,
 		name: "Scizor-Delta",
+		baseSpecies: "Scizor",
+		forme: "Delta",
 		types: ["Ice", "Fighting"],
 		baseStats: {hp: 70, atk: 130, def: 100, spa: 55, spd: 80, spe: 65},
 		abilities: {0: "Tough Claws", 1: "Slush Rush", H: "Super Luck"},
@@ -15395,6 +15407,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	sableyedelta: {
 		num: 302,
 		name: "Sableye-Delta",
+		baseSpecies: "Sableye",
+		forme: "Delta",
 		types: ["Fire", "Rock"],
 		baseStats: {hp: 50, atk: 75, def: 75, spa: 65, spd: 65, spe: 50},
 		abilities: {0: "Solid Rock", 1: "Weak Armor", H: "Unburden"},
@@ -15491,6 +15505,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	mawiledelta: {
 		num: 303,
 		name: "Mawile-Delta",
+		baseSpecies: "Mawile",
+		forme: "Delta",
 		types: ["Grass", "Dark"],
 		baseStats: {hp: 50, atk: 85, def: 85, spa: 55, spd: 55, spe: 50},
 		abilities: {0: "Serene Grace", 1: "Flower Veil", H: "Immunity"},
@@ -15793,6 +15809,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	medichamdelta: {
 		num: 308,
 		name: "Medicham-Delta",
+		baseSpecies: "Medicham",
+		forme: "Delta",
 		types: ["Fairy", "Ground"],
 		baseStats: {hp: 60, atk: 60, def: 75, spa: 60, spd: 75, spe: 80},
 		abilities: {0: "Sap Sipper", H: "Athenian"},
@@ -16404,6 +16422,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	cameruptdelta: {
 		num: 323,
 		name: "Camerupt-Delta",
+		baseSpecies: "Camerupt",
+		forme: "Delta",
 		types: ["Poison"],
 		baseStats: {hp: 70, atk: 100, def: 70, spa: 105, spd: 75, spe: 40},
 		abilities: {0: "Venomous", 1: "Poison Point", H: "Liquid Ooze"},
@@ -17516,6 +17536,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	miloticdelta: {
 		num: 350,
 		name: "Milotic-Delta",
+		baseSpecies: "Milotic",
+		forme: "Delta",
 		types: ["Ghost"],
 		baseStats: {hp: 95, atk: 60, def: 79, spa: 100, spd: 125, spe: 81},
 		abilities: {0: "Regenerator", 1: "Defiant", H: "Cursed Body"},
@@ -18079,6 +18101,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	glaliedelta: {
 		num: 362,
 		name: "Glalie-Delta",
+		baseSpecies: "Glalie",
+		forme: "Delta",
 		types: ["Fire", "Rock"],
 		baseStats: {hp: 80, atk: 80, def: 80, spa: 80, spd: 80, spe: 80},
 		abilities: {0: "Rock Head", H: "Flash Fire"},
@@ -20794,6 +20818,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	lopunnydelta: {
 		num: 428,
 		name: "Lopunny-Delta",
+		baseSpecies: "Lopunny",
+		forme: "Delta",
 		types: ["Fighting"],
 		baseStats: {hp: 65, atk: 76, def: 84, spa: 54, spd: 96, spe: 105},
 		abilities: {0: "Unburden", 1: "Inner Focus", H: "Limber"},
@@ -22647,6 +22673,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	galladedelta: {
 		num: 475,
 		name: "Gallade-Delta",
+		baseSpecies: "Gallade",
+		forme: "Delta",
 		types: ["Electric", "Ice"],
 		gender: "M",
 		baseStats: {hp: 68, atk: 125, def: 65, spa: 65, spd: 115, spe: 80},
@@ -22832,6 +22860,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	froslassdelta: {
 		num: 478,
 		name: "Froslass-Delta",
+		baseSpecies: "Froslass",
+		forme: "Delta",
 		types: ["Fire"],
 		gender: "F",
 		baseStats: {hp: 70, atk: 80, def: 70, spa: 80, spd: 70, spe: 110},
@@ -28693,6 +28723,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	bisharpdelta: {
 		num: 625,
 		name: "Bisharp-Delta",
+		baseSpecies: "Bisharp",
+		forme: "Delta",
 		types: ["Flying", "Fighting"],
 		baseStats: {hp: 65, atk: 125, def: 100, spa: 60, spd: 70, spe: 70},
 		abilities: {0: "Frisk", 1: "Defiant", H: "Wind Force"},
