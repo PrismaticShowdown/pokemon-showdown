@@ -10493,16 +10493,7 @@ end
 	},
 	minioncontrol: {
 		onPrepareHit(source, target, move) {
-			if (
-				move.category === "Status" ||
-				move.multihit ||
-				move.flags["noparentalbond"] ||
-				move.flags["charge"] ||
-				move.flags["futuremove"] ||
-				move.spreadHit ||
-				move.isZ ||
-				move.isMax
-			) { return; }
+			if (isParentalBondBanned(move, source)) { return; }
 
 			let allyCount = 0;
 			for (const ally of source.side.pokemon) {
@@ -10513,19 +10504,15 @@ end
 				}
 			}
 			move.multihit = allyCount;
-			move.multihitType = "parentalbond";
+			move.multihitType = "minion";
 		},
-		// Damage modifier implemented in BattleActions#modifyDamage() NEED TO ADD
 		onSourceModifySecondaries(secondaries, target, source, move) {
-			if (
-				move.multihitType === "parentalbond" &&
-				move.id === "secretpower" &&
-				move.hit < 2
-			) {
-				return secondaries.filter(
-					(effect) => effect.volatileStatus === "flinch"
-				);
-			}
+			console.log(move.hit, move.secondaries);
+			if (move.multihitType !== "minion") return;
+			if (!secondaries) return;
+			if (move.hit <= 1) return;
+			secondaries = secondaries.filter((effect) => effect.ability || effect.kingsrock);
+			return secondaries;
 		},
 		name: "Minion Control",
 		rating: 5,

@@ -262,7 +262,7 @@ export interface MoveData extends EffectData, MoveEventMethods, HitEffect {
 	ignorePositiveEvasion?: boolean;
 	multiaccuracy?: boolean;
 	multihit?: number | number[];
-	multihitType?: 'parentalbond';
+	multihitType?: 'parentalbond' | 'boxer' | 'maw' | 'minion' | 'headed' | 'dual' | 'ragingmoth'| 'minion';
 	noDamageVariance?: boolean;
 	nonGhostTarget?: MoveTarget;
 	pressureTarget?: MoveTarget;
