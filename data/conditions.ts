@@ -887,4 +887,181 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			return bp;
 		},
 	},
+	//New Statuses
+	bld: {
+		name: "bld",
+		effectType: "Status",
+		/**
+		 * This is called when the status starts and is responsible for populating status activation messages on screen.
+		 * It handles the status being activated by either an ability or a move secondary effect.
+		 * The target is the pokemon being statused, the source is the pokemon that caused the status.
+		 * Source effect will the ability or move that caused the status.
+		 */
+		onStart(target, source, sourceEffect) {
+			if (sourceEffect && sourceEffect.effectType === "Ability") {
+				this.add(
+					"-status",
+					target,
+					"bld",
+					`[from] ability: ${sourceEffect.name}`,
+					` [of] ${source}`
+				);
+			} else if (sourceEffect && sourceEffect.effectType === "Move") {
+				this.add(
+					"-status",
+					target,
+					"bld",
+					"[from] move: " + sourceEffect.name
+				);
+			}
+		},
+		/**
+		 * This is called right before a pokemon uses a given move.
+		 * We use this to check if a status healing move is being used on a bleeding pokemon.
+		 * If so, we block the heal but cure the bleed.
+		 * NOTE: This should cover non-self healing moves i.e. enemy or partner healing moves used on the bleeding pokemon
+		 */
+		// onBeforeMove(source, target, move) {
+		// 	if (move.flags['heal'] && move.category === "Status") {
+		// 		/// Outright block status healing moves.
+		// 		this.add('cant', target, 'status: bleed', move);
+		// 		target.cureStatus();
+		// 		return false;
+		// 	}
+		// },
+		/**
+		 * This is called right before a pokemon is healed by any source.
+		 * In this case, we just prevent the healing.
+		 * In most cases, you want to provide a message by using this.add("cant", ...)
+		 * But since this is from a status effect and blocks secondary effects from items, moves like giga drain, etc...
+		 * The expected behavior is more nuanced.
+		 * It's possible that some conditional messages may be desired here, but more work is needed to iron out all those details.
+		 */
+		onTryHeal(amount, target, source, effect) {
+			if (effect.effectType === "Condition" && effect.id === "wish") {
+				this.add("-message", `${target.name}'s wish cured it's bleed!`);
+				target.cureStatus(true);
+			}
+
+			if (effect.effectType === "Move") {
+				const move = effect as Move;
+
+				if (move.basePower < 0) target.cureStatus();
+				if (move.category === "Status") target.cureStatus();
+			}
+
+			return false;
+		},
+		/**
+		 * This should negate the boosts of this pokemon while bleed is inflicted.
+		 */
+		onModifyBoost(boosts: SparseBoostsTable, pokemon: Pokemon) {
+			for (const stat of Object.keys(boosts) as BoostID[]) {
+			  if (boosts[stat]! > 0) {
+				boosts[stat] = 0;
+			  }
+			}
+		  },
+		  
+		/**
+		 * This is (believed) to be used as an order in which status/item/weather residual effects resolve at the end of the battle.
+		 * In this case, bleed was made to have the same residual order value as bleed/freeze/etc.
+		 */
+		onResidualOrder: 10,
+		/**
+		 * This is called to compute any residual (turn over turn) effects on the statused target.
+		 * Bleed simply causes 1/16 base hp chip damage every turn.
+		 */
+		onResidual(pokemon) {
+			this.damage(pokemon.baseMaxhp / 16);
+		},
+	},
+	fbt: {
+		name: 'fbt',
+		effectType: 'Status',
+		onStart(target, source, sourceEffect) {
+			if (sourceEffect && sourceEffect.id === 'frostorb') {
+				this.add('-status', target, 'fbt', '[from] item: Frost Orb');
+			} else if (sourceEffect && sourceEffect.effectType === 'Ability') {
+				this.add('-status', target, 'fbt', '[from] ability: ' + sourceEffect.name, '[of] ' + source);
+			} else {
+				this.add('-status', target, 'fbt');
+			}
+		},
+		// Damage reduction is handled directly in the sim/battle.js damage function
+		onResidualOrder: 10,
+		onResidual(pokemon) {
+			this.damage(pokemon.baseMaxhp / 16);
+		},
+	},
+	fear: {
+		name: "fear",
+		effectType: "Status",
+		duration: 2,
+		onStart(pokemon, source) {
+			this.add(
+				"-activate",
+				pokemon,
+				"move: " + this.effectState.sourceEffect,
+				"[of] " + source
+			);
+		},
+		onResidualOrder: 13,
+		onResidual(pokemon) {
+			const source = this.effectState.source;
+			// G-Max Centiferno and G-Max Sandblast continue even after the user leaves the field
+			const gmaxEffect = ["gmaxcentiferno", "gmaxsandblast"].includes(
+				this.effectState.sourceEffect.id
+			);
+			if (
+				source &&
+				(!source.isActive || source.hp <= 0 || !source.activeTurns) &&
+				!gmaxEffect
+			) {
+				delete pokemon.volatiles["partiallytrapped"];
+				this.add(
+					"-end",
+					pokemon,
+					this.effectState.sourceEffect,
+					"[partiallytrapped]",
+					"[silent]"
+				);
+				return;
+			}
+		},
+		onEnd(pokemon) {
+			this.add(
+				"-end",
+				pokemon,
+				this.effectState.sourceEffect,
+				"[partiallytrapped]"
+			);
+		},
+		onTrapPokemon(pokemon) {
+			const gmaxEffect = ["gmaxcentiferno", "gmaxsandblast"].includes(
+				this.effectState.sourceEffect.id
+			);
+			if (this.effectState.source?.isActive || gmaxEffect) pokemon.tryTrap();
+		},
+		onSourceModifyDamage(damage, source, target, move) {
+			if (source.status === "fear") {
+				return this.chainModify(1.5);
+			}
+		},
+	},
+	//New weather stuff
+	/*clouddustweather: {
+		//Cast as a field condition to allow 'suppressWeather'
+		duration: 0,
+		onFieldStart() {
+		  this.add('-fieldstart', 'Cloud Dust');
+		},
+		onFieldRestart() {
+		  this.add('-fieldstart', 'Cloud Dust');
+		},
+		suppressWeather: true,
+		onFieldEnd() {
+		  this.add('-fieldend', 'Cloud Dust');
+		},
+	  } as FieldConditionData,*/
 };
