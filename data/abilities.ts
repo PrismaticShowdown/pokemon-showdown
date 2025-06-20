@@ -11161,11 +11161,15 @@ end
 		onStart(pokemon) {
 			const target = pokemon.oppositeFoe();
 			if (!target) return;
-
-			const move = this.dex.deepClone(this.dex.moves.get("sandtomb"));
-			move.basePower = 20;
-
-			this.actions.runAdditionalMove(move, pokemon, target);
+			const moveMutations = {
+				basePower: 20,
+			};
+			this.actions.runAdditionalMove(
+				Dex.moves.get("sandtomb"),
+				pokemon,
+				target,
+				moveMutations
+			);
 		},
 		name: "Sand Pit",
 		rating: 4,
