@@ -29424,6 +29424,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Special",
 		name: "Super Glitch",
 		pp: 1,
+		noPPBoosts: true,
 		priority: 1,
 		flags: {mirror: 1 },
 		secondary: null,
