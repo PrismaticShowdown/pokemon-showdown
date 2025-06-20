@@ -2503,7 +2503,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	clefablereduxmega: {
 		num: 36,
 		name: "Clefable-Redux-Mega",
-		baseSpecies: "Clefable",
+		baseSpecies: "Clefable-Redux",
 		forme: "Mega",
 		types: ["Rock"],
 		genderRatio: {M: 0.25, F: 0.75},
@@ -15437,7 +15437,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	sableyereduxmega: {
 		num: 302,
 		name: "Sableye-Redux-Mega",
-		baseSpecies: "Sableye",
+		baseSpecies: "Sableye-Redux",
 		forme: "Mega",
 		types: ["Steel", "Fairy"],
 		baseStats: {hp: 70, atk: 100, def: 110, spa: 100, spd: 120, spe: 20},
