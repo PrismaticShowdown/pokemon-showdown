@@ -10163,6 +10163,26 @@ end
 		gen: 8,
 		shortDesc: "If this Pokemon is at full HP, its Ice-type moves have their priority increased by 1.",
 	},
+	funeralpyre: {
+		onResidualOrder: 29,
+		onResidualSubOrder: 1,
+		onResidual(pokemon) {
+		// Only activate if the Pokémon with the ability is still active
+			if (!pokemon.isActive || pokemon.fainted) return;
+
+			for (const target of pokemon.side.foe.active) {
+				if (!target || target.fainted) continue;
+				if (!target.hasType('Ghost') && !target.hasType('Dark')) {
+				this.damage(target.baseMaxhp / 4, target, pokemon, this.dex.abilities.get('funeralpyre'));
+				}
+			}
+		},
+		name: "Funeral Pyre",
+		rating: 4,
+		num: -1001,
+		gen: 8,
+		shortDesc: "Non-Ghost and Dark-types take 1/4 damage every turn.",
+	},
 	giantwings: {
 		onModifyDamage(basePower, attacker, defender, move) {
 			if (move.flags["wind"]) {
@@ -10175,6 +10195,30 @@ end
 		num: 384,
 		gen: 8,
 		shortDesc: "This Pokemon's wind moves are boosted 1.25x.",
+	},
+	greaterspirit: {
+		onStart(pokemon) {
+			if (this.field.weather !== 'fog') return;
+
+			const statIDs: StatIDExceptHP[] = ['atk', 'def', 'spa', 'spd', 'spe'];
+			let maxStat: StatID = 'atk';
+			let maxValue = pokemon.getStat('atk');
+
+			for (const stat of statIDs) {
+				const value = pokemon.getStat(stat);
+				if (value > maxValue) {
+					maxStat = stat;
+					maxValue = value;
+				}
+			}
+
+			this.boost({[maxStat]: 1}, pokemon, pokemon, this.dex.abilities.get('greaterspirit'));
+		},
+		name: "Greater Spirit",
+		rating: 3,
+		num: -1002,
+		gen: 8,
+		shortDesc: "Boosts the holder's highest stat by 1 stage on entry in fog.",
 	},
 	grippincer: {
 		onAfterMoveSecondarySelf(source, target, move) {
