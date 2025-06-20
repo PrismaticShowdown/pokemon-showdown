@@ -10,7 +10,7 @@ venusaur: {
 	doublesTier: "(DUU)",
 },
 venusaurmega: {
-	tier: "DIV",
+	tier: "DV",
 
 },
 venusaurgmax: {
@@ -52,7 +52,7 @@ blastoise: {
 
 },
 blastoisemega: {
-	tier: "DI",
+	tier: "DII",
 },
 blastoisegmax: {
 	isNonstandard: "Past",
@@ -409,7 +409,7 @@ alakazam: {
 	tier: "DVI",
 },
 alakazammega: {
-	tier: "DIII",
+	tier: "DIV",
 },
 machop: {
 	tier: "LC",
@@ -496,7 +496,7 @@ slowking: {
 	doublesTier: "(DUU)",
 },
 slowkinggalar: {
-	tier: "DIII",
+	tier: "DIV",
 	doublesTier: "(DUU)",
 },
 magnemite: {
@@ -683,11 +683,11 @@ happiny: {
 	tier: "LC",
 },
 chansey: {
-	tier: "DIII",
+	tier: "DIV",
 	doublesTier: "NFE",
 },
 blissey: {
-	tier: "DII",
+	tier: "DIII",
 	doublesTier: "(DUU)",
 },
 tangela: {
@@ -783,7 +783,7 @@ pinsir: {
 	tier: "DX",
 },
 pinsirmega: {
-	tier: "DIV",
+	tier: "DV",
 },
 tauros: {
 	tier: "DX",
@@ -809,7 +809,7 @@ gyarados: {
 	doublesTier: "DUU",
 },
 gyaradosmega: {
-	tier: "DIII",
+	tier: "DIV",
 },
 lapras: {
 	tier: "DXI",
@@ -924,12 +924,12 @@ zapdos: {
 	doublesTier: "(DUU)",
 },
 zapdosgalar: {
-	tier: "DIV",
+	tier: "DV",
 	doublesTier: "(DUU)",
 
 },
 moltres: {
-	tier: "DIII",
+	tier: "DIV",
 	doublesTier: "(DUU)",
 
 },
@@ -950,18 +950,18 @@ dragonite: {
 
 },
 mewtwo: {
-	tier: "IBL",
+	tier: "Uber",
 	doublesTier: "DUber",
 
 },
 mewtwomegax: {
 
-	tier: "IBL",
+	tier: "Uber",
 
 },
 mewtwomegay: {
 
-	tier: "IBL",
+	tier: "Uber",
 
 },
 mew: {
@@ -1245,7 +1245,7 @@ sneaselhisui: {
 	doublesTier: "NFE",
 },
 weavile: {
-	tier: "DIII",
+	tier: "DIV",
 	doublesTier: "(DUU)",
 },
 sneasler: {
@@ -1395,7 +1395,7 @@ tyranitarmega: {
 	tier: "DIV",
 },
 lugia: {
-	tier: "DII",
+	tier: "DIII",
 	doublesTier: "DUber",
 
 },
@@ -1432,7 +1432,7 @@ blaziken: {
 	doublesTier: "(DUU)",
 },
 blazikenmega: {
-	tier: "DII",
+	tier: "DIII",
 },
 mudkip: {
 	tier: "LC",
@@ -1631,7 +1631,7 @@ mawile: {
 
 },
 mawilemega: {
-	tier: "DII",
+	tier: "DIII",
 
 },
 aron: {
@@ -1657,7 +1657,7 @@ medicham: {
 
 },
 medichammega: {
-	tier: "DIII",
+	tier: "DIV",
 },
 electrike: {
 	tier: "LC",
@@ -1981,7 +1981,7 @@ metagross: {
 
 },
 metagrossmega: {
-	tier: "DIII",
+	tier: "DIV",
 },
 regirock: {
 	tier: "DXI",
@@ -2000,14 +2000,14 @@ latias: {
 	doublesTier: "(DUU)",
 },
 latiasmega: {
-	tier: "DIV",
+	tier: "DV",
 },
 latios: {
-	tier: "DIV",
+	tier: "DV",
 	doublesTier: "(DUU)",
 },
 latiosmega: {
-	tier: "DIII",
+	tier: "DV",
 
 },
 kyogre: {
@@ -2021,7 +2021,7 @@ kyogreprimal: {
 
 },
 groudon: {
-	tier: "IBL",
+	tier: "DI",
 	doublesTier: "DUber",
 
 },
@@ -2031,7 +2031,7 @@ groudonprimal: {
 
 },
 rayquaza: {
-	tier: "Uber",
+	tier: "IBL",
 	doublesTier: "DUber",
 
 },
@@ -2226,7 +2226,7 @@ lopunny: {
 
 },
 lopunnymega: {
-	tier: "DIII",
+	tier: "DIV",
 
 },
 glameow: {
@@ -2276,7 +2276,7 @@ garchomp: {
 
 },
 garchompmega: {
-	tier: "DII",
+	tier: "DIII",
 },
 riolu: {
 	tier: "LC",
@@ -2384,12 +2384,12 @@ azelf: {
 
 },
 dialga: {
-	tier: "IBL",
+	tier: "DI",
 	doublesTier: "DUber",
 
 },
 dialgaorigin: {
-	tier: "DI",
+	tier: "DII",
 	doublesTier: "DUber",
 },
 palkia: {
@@ -2398,12 +2398,12 @@ palkia: {
 
 },
 palkiaorigin: {
-	tier: "IBL",
+	tier: "DII",
 	doublesTier: "DUber",
 
 },
 heatran: {
-	tier: "DIII",
+	tier: "DIV",
 	doublesTier: "DUU",
 
 },
@@ -2413,12 +2413,12 @@ regigigas: {
 
 },
 giratina: {
-	tier: "DII",
+	tier: "DIII",
 	doublesTier: "DUber",
 
 },
 giratinaorigin: {
-	tier: "IBL",
+	tier: "DI",
 	doublesTier: "DUber",
 
 },
@@ -2438,7 +2438,7 @@ manaphy: {
 
 },
 darkrai: {
-	tier: "DIII",
+	tier: "DIV",
 	doublesTier: "DUber",
 },
 shaymin: {
@@ -2452,7 +2452,7 @@ shayminsky: {
 
 },
 arceus: {
-	tier: "Uber",
+	tier: "IBL",
 	doublesTier: "DUber",
 },
 arceusbug: {
@@ -2666,7 +2666,7 @@ drilbur: {
 	tier: "LC",
 },
 excadrill: {
-	tier: "DIV",
+	tier: "DV",
 	doublesTier: "(DUU)",
 
 },
@@ -2792,7 +2792,7 @@ darmanitanzen: {
 
 },
 darmanitangalar: {
-	tier: "DI",
+	tier: "DII",
 
 },
 darmanitangalarzen: {
@@ -2987,7 +2987,7 @@ ferroseed: {
 	tier: "LC",
 },
 ferrothorn: {
-	tier: "DIV",
+	tier: "DV",
 
 },
 klink: {
@@ -3135,7 +3135,7 @@ larvesta: {
 	tier: "LC",
 },
 volcarona: {
-	tier: "DIII",
+	tier: "DIV",
 	doublesTier: "(DUU)",
 
 },
@@ -3160,7 +3160,7 @@ tornadus: {
 
 },
 tornadustherian: {
-	tier: "DIV",
+	tier: "DV",
 	doublesTier: "(DUU)",
 
 },
@@ -3269,7 +3269,7 @@ greninja: {
 	doublesTier: "(DUU)",
 },
 greninjaash: {
-	tier: "DIV",
+	tier: "DV",
 },
 bunnelby: {
 	tier: "LC",
@@ -3358,7 +3358,7 @@ doublade: {
 	tier: "DVI",
 },
 aegislash: {
-	tier: "DIV",
+	tier: "DV",
 },
 aegislashblade: {
 },
@@ -3556,7 +3556,7 @@ hoopa: {
 
 },
 hoopaunbound: {
-	tier: "DIV",
+	tier: "DV",
 	doublesTier: "(DUU)",
 
 },
@@ -3942,7 +3942,7 @@ kommoototem: {
 	tier: "Illegal",
 },
 tapukoko: {
-	tier: "DIII",
+	tier: "DIV",
 },
 tapulele: {
 	tier: "DI",
@@ -3960,11 +3960,11 @@ cosmoem: {
 	tier: "NFE",
 },
 solgaleo: {
-	tier: "DI",
+	tier: "DII",
 	doublesTier: "DUber",
 },
 lunala: {
-	tier: "IBL",
+	tier: "DII",
 	doublesTier: "DUber",
 
 },
@@ -3972,7 +3972,7 @@ nihilego: {
 	tier: "DVI",
 },
 buzzwole: {
-	tier: "DII",
+	tier: "DIV",
 },
 pheromosa: {
 	tier: "Uber",
@@ -3984,7 +3984,7 @@ celesteela: {
 	tier: "DVI",
 },
 kartana: {
-	tier: "DIII",
+	tier: "DIV",
 },
 guzzlord: {
 	tier: "DXI",
@@ -4001,7 +4001,7 @@ necrozmaduskmane: {
 
 },
 necrozmadawnwings: {
-	tier: "DII",
+	tier: "DV",
 	doublesTier: "DUber",
 
 },
@@ -4033,14 +4033,14 @@ blacephalon: {
 
 },
 zeraora: {
-	tier: "DIV",
+	tier: "DV",
 
 },
 meltan: {
 	tier: "LC",
 },
 melmetal: {
-	tier: "DIII",
+	tier: "DIV",
 
 },
 melmetalgmax: {
@@ -4360,7 +4360,7 @@ arctozolt: {
 	tier: "DII",
 },
 dracovish: {
-	tier: "IBL",
+	tier: "DII",
 
 },
 arctovish: {
@@ -4396,12 +4396,12 @@ zaciancrowned: {
 
 },
 zamazenta: {
-	tier: "DIV",
+	tier: "DV",
 	doublesTier: "DUber",
 
 },
 zamazentacrowned: {
-	tier: "DIII",
+	tier: "DIV",
 	doublesTier: "DUber",
 },
 eternatus: {
@@ -4417,12 +4417,12 @@ kubfu: {
 	tier: "LC",
 },
 urshifu: {
-	tier: "DII",
+	tier: "DIII",
 	doublesTier: "DUber",
 
 },
 urshifurapidstrike: {
-	tier: "DIII",
+	tier: "DIV",
 	doublesTier: "DUber",
 },
 urshifugmax: {
@@ -4452,7 +4452,7 @@ glastrier: {
 
 },
 spectrier: {
-	tier: "DII",
+	tier: "DV",
 	doublesTier: "(DUU)",
 
 },
@@ -4462,7 +4462,7 @@ calyrex: {
 
 },
 calyrexice: {
-	tier: "IBL",
+	tier: "DII",
 },
 calyrexshadow: {
 	tier: "Uber",
@@ -4569,7 +4569,7 @@ wugtrio: {
 
 },
 dondozo: {
-	tier: "DIV",
+	tier: "DV",
 	doublesTier: "(DUU)",
 
 },
@@ -4582,7 +4582,7 @@ finizen: {
 	tier: "LC",
 },
 palafin: {
-	tier: "DI",
+	tier: "DII",
 	doublesTier: "(DUU)",
 
 },
@@ -4762,7 +4762,7 @@ gholdengo: {
 	doublesTier: "DOU",
 },
 greattusk: {
-	tier: "DII",
+	tier: "DIII",
 	doublesTier: "DUU",
 },
 brutebonnet: {
@@ -4782,7 +4782,7 @@ fluttermane: {
 	doublesTier: "DUber",
 },
 slitherwing: {
-	tier: "DIV",
+	tier: "DV",
 	doublesTier: "(DUU)",
 },
 roaringmoon: {
@@ -4800,12 +4800,12 @@ ironmoth: {
 
 },
 ironhands: {
-	tier: "DIV",
+	tier: "DV",
 	doublesTier: "DOU",
 
 },
 ironjugulis: {
-	tier: "DIV",
+	tier: "DV",
 	doublesTier: "(DUU)",
 
 },
@@ -4824,12 +4824,12 @@ ironvaliant: {
 
 },
 tinglu: {
-	tier: "DIII",
+	tier: "DIV",
 	doublesTier: "DOU",
 
 },
 chienpao: {
-	tier: "DI",
+	tier: "DII",
 	doublesTier: "DOU",
 },
 wochien: {
@@ -4838,7 +4838,7 @@ wochien: {
 
 },
 chiyu: {
-	tier: "DII",
+	tier: "DIII",
 	doublesTier: "DOU",
 
 },
@@ -4848,7 +4848,7 @@ koraidon: {
 	natDexTier: "AG",
 },
 miraidon: {
-	tier: "Uber",
+	tier: "IBL",
 	doublesTier: "DUber",
 	natDexTier: "AG",
 },
@@ -5537,7 +5537,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	noiverndelta: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	budewdelta: {
 		tier: "LC",
@@ -5705,7 +5705,7 @@ pecharunt: {
 		tier: "NFE",
 	},
 	dragonitedelta: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	hoothootdelta: {
 		tier: "LC",
@@ -5732,7 +5732,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	ambipomdelta: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	yanmadelta: {
 		tier: "LC",
@@ -5813,7 +5813,7 @@ pecharunt: {
 		tier: "NFE",
 	},
 	aggrondelta: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	medititedelta: {
 		tier: "LC",
@@ -5849,7 +5849,7 @@ pecharunt: {
 		tier: "DV",
 	},
 	miloticdeltamega: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	clamperldelta: {
 		tier: "LC",
@@ -5861,19 +5861,19 @@ pecharunt: {
 		tier: "DVI",
 	},
 	metagrossdeltaruin: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	metagrossdeltaruinmega: {
 		tier: "DI",
 	},
 	metagrossdeltaspider: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	metagrossdeltaspidermega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	metagrossdeltaruinmegacrystal: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	bunearydelta: {
 		tier: "LC",
@@ -5942,7 +5942,7 @@ pecharunt: {
 		tier: "DIX",
 	},
 	emolgadelta: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	emolgadeltablaze: {
 		tier: "Illegal",
@@ -5966,7 +5966,7 @@ pecharunt: {
 		tier: "NFE",
 	},
 	chandeluredelta: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	axewdelta: {
 		tier: "LC",
@@ -6026,7 +6026,7 @@ pecharunt: {
 		tier: "DI",
 	},
 	meloettadelta: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	meloettadeltamagician: {
 		tier: "DVII",
@@ -6077,7 +6077,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	steelixmegaf: {
-		tier: "DII",
+		tier: "DIV",
 	},
 	magcargomega: {
 		tier: "DVIII",
@@ -6095,7 +6095,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	crawdauntmega: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	miloticmega: {
 		tier: "DI",
@@ -6116,7 +6116,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	zoroarkmega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	gothitellemega: {
 		tier: "DVII",
@@ -6128,7 +6128,7 @@ pecharunt: {
 		tier: "Uber",
 	},
 	haxorusmega: {
-		tier: "DI",
+		tier: "DII",
 	},
 	stunfiskmega: {
 		tier: "DVI",
@@ -6333,7 +6333,7 @@ pecharunt: {
 		tier: "DIX",
 	},
 	pajaynuclear: {
-		tier: "DII",
+		tier: "DV",
 	},
 	jerbolta: {
 		tier: "DI",
@@ -6693,7 +6693,7 @@ pecharunt: {
 		tier: "DIX",
 	},
 	geigeroach: {
-		tier: "DII",
+		tier: "DIV",
 	},
 	minicorn: {
 		tier: "LC",
@@ -6702,7 +6702,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	kiricornmega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	oblivicorn: {
 		tier: "DVI",
@@ -6750,7 +6750,7 @@ pecharunt: {
 		tier: "NFE",
 	},
 	beliaddon: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	seikamater: {
 		tier: "DVI",
@@ -6768,10 +6768,10 @@ pecharunt: {
 		tier: "DVII",
 	},
 	lanthan: {
-		tier: "DII",
+		tier: "DIV",
 	},
 	actan: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	actannuclear: {
 		tier: "AG",
@@ -6801,7 +6801,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	gyaradosnuclear: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	gyaradosnuclearmega: {
 		tier: "IBL",
@@ -6834,7 +6834,7 @@ pecharunt: {
 		tier: "IBL",
 	},
 	dramsamamegadark: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	//flux
 	mozz: {
@@ -7062,7 +7062,7 @@ pecharunt: {
 		tier: "NFE",
 	},
 	lazurix: {
-		tier: "DII",
+		tier: "DV",
 	},
 	petrifly: {
 		tier: "LC",
@@ -7092,7 +7092,7 @@ pecharunt: {
 		tier: "NFE",
 	},
 	phoedra: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	heraldra: {
 		tier: "DV",
@@ -7110,7 +7110,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	basilidra: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	quetzaldra: {
 		tier: "DVII",
@@ -7261,7 +7261,7 @@ pecharunt: {
 		tier: "DX",
 	},
 	trishoutxenoversal: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	trishoutx: {
 		tier: "DIX",
@@ -7336,7 +7336,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	grudako: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	sabolt: {
 		tier: "DX",
@@ -7369,7 +7369,7 @@ pecharunt: {
 		tier: "DX",
 	},
 	goombear: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	fatail: {
 		tier: "DIX",
@@ -7381,7 +7381,7 @@ pecharunt: {
 		tier: "DVIII",
 	},
 	skravroom: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	rexquiem: {
 		tier: "DVI",
@@ -7429,7 +7429,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	arcaninemega: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	rampardosmega: {
 		tier: "DVI",
@@ -7504,7 +7504,7 @@ pecharunt: {
 		tier: "(DXII)",
 	},
 	greninjax: {
-		tier: "DI",
+		tier: "DII",
 	},
 	mewtwoxenoverse: {
 		tier: "AG",
@@ -7534,7 +7534,7 @@ pecharunt: {
 		tier: "DIX",
 	},
 	tapukokox: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	tapubulux: {
 		tier: "DVI",
@@ -7616,7 +7616,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	sunflorid: {
-		tier: "DI",
+		tier: "DII",
 	},
 	sorcerice: {
 		tier: "DVI",
@@ -7631,7 +7631,7 @@ pecharunt: {
 		tier: "AG",
 	},
 	snosquatch: {
-		tier: "IBL",
+		tier: "DI",
 	},
 	grasquatch: {
 		tier: "DVI",
@@ -7658,10 +7658,10 @@ pecharunt: {
 		tier: "DVII",
 	},
 	porygonx: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	oculeus: {
-		tier: "Uber",
+		tier: "IBL",
 	},
 	arkhaos: {
 		tier: "AG",
@@ -7682,7 +7682,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	orcabyss: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	joltalope: {
 		tier: "DIX",
@@ -7745,7 +7745,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	feraligatregho: {
-		tier: "DII",
+		tier: "DIV",
 	},
 	//vega
 	syleafid: {
@@ -7794,7 +7794,7 @@ pecharunt: {
 		tier: "DIX",
 	},
 	serplant: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	necrosia: {
 		tier: "DVIII",
@@ -7941,7 +7941,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	coraga: {
-		tier: "IBL",
+		tier: "DI",
 	},
 	drizzlob: {
 		tier: "DVI",
@@ -8088,7 +8088,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	almaria: {
-		tier: "DI",
+		tier: "DII",
 	},
 	aspherevega: {
 		tier: "Uber",
@@ -8097,7 +8097,7 @@ pecharunt: {
 		tier: "IBL",
 	},
 	aspherealtair: {
-		tier: "Uber",
+		tier: "IBL",
 	},
 	//Procyon and Deneb
 	skarmorail: {
@@ -8237,7 +8237,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	helioliskmega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	laprasmegad: {
 		tier: "DVII",
@@ -8247,7 +8247,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	quetzillian: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	bathygigas: {
 		tier: "DVI",
@@ -8289,7 +8289,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	flitjitter: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	mayzmen: {
 		tier: "DVII",
@@ -8391,16 +8391,16 @@ pecharunt: {
 		tier: "DIX",
 	},
 	nanahi: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	potassopod: {
 		tier: "DI",
 	},
 	chixulob: {
-		tier: "DI",
+		tier: "DII",
 	},
 	chixulobmega: {
-		tier: "DI",
+		tier: "DII",
 	},
 	xibalbat: {
 		tier: "DVII",
@@ -8439,7 +8439,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	peroxotal: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	ariamano: {
 		tier: "DIX",
@@ -8466,7 +8466,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	melumuse: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	melumourn: {
 		tier: "DVI",
@@ -8478,10 +8478,10 @@ pecharunt: {
 		tier: "DVII",
 	},
 	regiwood: {
-		tier: "DI",
+		tier: "DV",
 	},
 	regibrute: {
-		tier: "Uber",
+		tier: "DV",
 	},
 	regiternal: {
 		tier: "Uber",
@@ -8499,7 +8499,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	boinklebee: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	miloticmegau: {
 		tier: "DII",
@@ -8526,7 +8526,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	porygonzmega: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	golurkmega: {
 		tier: "DVI",
@@ -8990,13 +8990,13 @@ pecharunt: {
 		tier: "DV",
 	},
 	gardevoirfallenmega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	galladefallen: {
 		tier: "DVI",
 	},
 	galladefallenmega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	snoruntfallen: {
 		tier: "LC",
@@ -9134,13 +9134,13 @@ pecharunt: {
 		tier: "DVI",
 	},
 	mismagiusmega: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	mamoswinemega: {
 		tier: "DIV",
 	},
 	goodramega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	trapinchfallen: {
 		tier: "LC",
@@ -9258,7 +9258,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	possessum: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	grenaize: {
 		tier: "LC",
@@ -9387,7 +9387,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	encryptid: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	roenin: {
 		tier: "LC",
@@ -9456,7 +9456,7 @@ pecharunt: {
 		tier: "NFE",
 	},
 	juroxic: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	cadavillar: {
 		tier: "LC",
@@ -9495,10 +9495,10 @@ pecharunt: {
 		tier: "DVIII",
 	},
 	wyrmonger: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	migreat: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	migreatsnow: {
 		tier: "DI",
@@ -9743,7 +9743,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	nyandozo: {
-		tier: "DII",
+		tier: "DIV",
 	},
 	poochiever: {
 		tier: "LC",
@@ -9923,7 +9923,7 @@ pecharunt: {
 		tier: "DVIII",
 	},
 	sheeple: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	phandesite: {
 		tier: "LC",
@@ -10205,7 +10205,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	partikrow: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	blitty: {
 		tier: "LC",
@@ -10289,7 +10289,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	femuron: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	skelegron: {
 		tier: "DIII",
@@ -10451,7 +10451,7 @@ pecharunt: {
 		tier: "DIX",
 	},
 	eelix: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	eelectrix: {
 		tier: "DV",
@@ -10502,7 +10502,7 @@ pecharunt: {
 		tier: "DV",
 	},
 	sneaselot: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	corphorce: {
 		tier: "LC",
@@ -10550,7 +10550,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	roseliege: {
-		tier: "DII",
+		tier: "DIV",
 	},
 	cublade: {
 		tier: "LC",
@@ -10631,7 +10631,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	dronmega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	tremoraid: {
 		tier: "LC",
@@ -10745,7 +10745,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	impactress: {
-		tier: "DV",
+		tier: "DIV",
 	},
 	magmer: {
 		tier: "LC",
@@ -10829,7 +10829,7 @@ pecharunt: {
 		tier: "DI",
 	},
 	regihue: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	regideep: {
 		tier: "DIII",
@@ -10856,7 +10856,7 @@ pecharunt: {
 		tier: "NFE",
 	},
 	megalmara: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	atomiquil: {
 		tier: "LC",
@@ -10889,7 +10889,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	repeabell: {
-		tier: "DII",
+		tier: "DV",
 	},
 	snorshoot: {
 		tier: "DI",
@@ -10916,7 +10916,7 @@ pecharunt: {
 		tier: "DIII",
 	},
 	dronmorose: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	queglett: {
 		tier: "LC",
@@ -10928,7 +10928,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	bewmbewm: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	illveon: {
 		tier: "DVII",
@@ -10943,28 +10943,28 @@ pecharunt: {
 		tier: "DIX",
 	},
 	substikyut: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	amalgaform: {
 		tier: "LC",
 	},
 	amalgaformdelta: {
-		tier: "Uber",
+		tier: "DIV",
 	},
 	amalgaformepsilon: {
 		tier: "Uber",
 	},
 	amalgaformphi: {
-		tier: "Uber",
+		tier: "DI",
 	},
 	amalgaformzeta: {
-		tier: "Uber",
+		tier: "DI",
 	},
 	amalgaformlambda: {
-		tier: "Uber",
+		tier: "DII",
 	},
 	amalgaformalpha: {
-		tier: "IBL",
+		tier: "DV",
 	},
 	amalgaformomega: {
 		tier: "AG",
@@ -10986,7 +10986,7 @@ pecharunt: {
     tier: "DVIII",
 	},
 	salaslammega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	snuffuzz: {
     tier: "DVIII",
@@ -11055,7 +11055,7 @@ pecharunt: {
     tier: "DX",
 	},
 	lophugmega: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	werehide: {
 		tier: "DIX",
@@ -11079,7 +11079,7 @@ pecharunt: {
 		tier: "DV",
 	},
 	legenix: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	cobolta: {
 		tier: "DVI",
@@ -11169,7 +11169,7 @@ pecharunt: {
     tier: "DVI",
 	},
 	bulkermega: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	explonade: {
 		tier: "DVI",
@@ -11232,7 +11232,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	markrush: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	eqwater: {
 		tier: "DVII",
@@ -11376,7 +11376,7 @@ pecharunt: {
 		tier: "DX",
 	},
 	hippotone: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	cheetric: {
 		tier: "DVI",
@@ -11385,7 +11385,7 @@ pecharunt: {
 		tier: "DVIII",
 	},
 	syphoon: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	hypnosmog: {
 		tier: "DVII",
@@ -11403,7 +11403,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	silvicious: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	kongrilla: {
 		tier: "DVII",
@@ -11415,7 +11415,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	tikitoko: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	cryodra: {
     tier: "DVII",
@@ -11782,7 +11782,7 @@ pecharunt: {
 		tier: "DX",
 	},
 	magroplex: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	soakoth: {
 		tier: "DXII",
@@ -11890,7 +11890,7 @@ pecharunt: {
 		tier: "DIII",
 	},
 	quetzarspace: {
-		tier: "DII",
+		tier: "DIV",
 	},
 	xochi: {
 		tier: "DV",
@@ -11936,7 +11936,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	drednawmega: {
-		tier: "DII",
+		tier: "DV",
 	},
 	coalossalmega: {
 		tier: "DVII",
@@ -11945,13 +11945,13 @@ pecharunt: {
 		tier: "DVII",
 	},
 	appletunmega: {
-		tier: "DI",
+		tier: "DV",
 	},
 	sandacondamega: {
 		tier: "DVII",
 	},
 	toxtricitymega: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	centiskorchmega: {
 		tier: "DVII",
@@ -11975,7 +11975,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	dodriosevii: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	teddiursasevii: {
 		tier: "LC",
@@ -12011,7 +12011,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	wishiwashisevii: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	wishiwashiseviischool: {
 		tier: "Illegal",
@@ -12186,7 +12186,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	lunayemega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	narvalor: {
 		tier: "DVIII",
@@ -12217,7 +12217,7 @@ pecharunt: {
 	},
 	//BlazingEmerald
 	mewtwoarmor: {
-		tier: "DII",
+		tier: "DV",
 	},
 	venonathoenn: {
 		tier: "LC",
@@ -12232,7 +12232,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	tentacruelhoenn: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	dunsparcehoenn: {
 		tier: "LC",
@@ -12334,10 +12334,10 @@ pecharunt: {
 		tier: "LC",
 	},
 	lanturnhoenn: {
-		tier: "DI",
+		tier: "DII",
 	},
 	lugiashadow: {
-		tier: "DIII"
+		tier: "DIV"
 	},
 	qwilfishhoenn: {
 		tier: "DIX",
@@ -12373,7 +12373,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	crawb: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	sphealgolden: {
 		tier: "DVII",
@@ -12560,7 +12560,7 @@ pecharunt: {
 		tier: "DIX",
 	},
 	aerodactylayreimega: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	munchlaxayrei: {
 		tier: "LC",
@@ -12713,7 +12713,7 @@ pecharunt: {
 		tier: "DVIII",
 	},
 	galladeayreimega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	shroomishayrei: {
 		tier: "LC",
@@ -12785,7 +12785,7 @@ pecharunt: {
 		tier: "DVIII",
 	},
 	relicanthayreimega: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	luvdiscayrei: {
 		tier: "LC",
@@ -12836,16 +12836,16 @@ pecharunt: {
 		tier: "NFE",
 	},
 	roseradeayrei: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	pachirisuayrei: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	drifloonayrei: {
 		tier: "LC",
 	},
 	drifblimayrei: {
-		tier: "DI",
+		tier: "DII",
 	},
 	rioluayrei: {
 		tier: "LC",
@@ -13040,7 +13040,7 @@ pecharunt: {
 		tier: "NFE",
 	},
 	rillaboomayrei: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	sizzlipedeayrei: {
 		tier: "LC",
@@ -13076,7 +13076,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	reapatisse: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	habaneevil: {
 		tier: "DV",
@@ -13088,13 +13088,13 @@ pecharunt: {
 		tier: "DVI",
 	},
 	astralaxy: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	masimuthi: {
 		tier: "DV",
 	},
 	mujineon: {
-		tier: "IBL",
+		tier: "DI",
 	},
 	spareon: {
 		tier: "DIX",
@@ -13127,7 +13127,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	vultema: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	parlomai: {
 		tier: "DVI",
@@ -13148,7 +13148,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	khortares: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	reincarnape: {
 		tier: "DVI",
@@ -13199,10 +13199,10 @@ pecharunt: {
 		tier: "LC",
 	},
 	teranigrade: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	teranigradefire: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	teranigradeice: {
 		tier: "DV",
@@ -13539,7 +13539,7 @@ pecharunt: {
 		tier: "DXI",
 	},
 	cometry: {
-		tier: "DII",
+		tier: "DV",
 	},
 	dragoniteconstela: {
 		tier: "DVI",
@@ -13665,7 +13665,7 @@ pecharunt: {
 		tier: "DIII",
 	},
 	enteiconstela: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	suicuneconstela: {
 		tier: "DV",
@@ -13700,7 +13700,7 @@ pecharunt: {
 	
 	},
 	ironexo: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	phantowl: {
 		tier: "DVI",
@@ -13715,7 +13715,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	nidoqueenmega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	nidokingmega: {
 		tier: "DVI",
@@ -13736,7 +13736,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	dragonitemega: {
-		tier: "DI",
+		tier: "DII",
 	},
 	meganiummegae: {
 		tier: "DVIII",
@@ -13772,10 +13772,10 @@ pecharunt: {
 		tier: "DI",
 	},
 	kingdramega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	hitmontopmega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	breloommega: {
 		tier: "DVII",
@@ -13790,7 +13790,7 @@ pecharunt: {
 		tier: "DV",
 	},
 	relicanthmega: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	torterramega: {
 		tier: "DI",
@@ -13799,19 +13799,19 @@ pecharunt: {
 		tier: "DVI",
 	},
 	empoleonmega: {
-		tier: "DII",
+		tier: "DIV",
 	},
 	luxraymegae: {
 		tier: "DI",
 	},
 	magnezonemega: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	krookodilemega: {
 		tier: "DII",
 	},
 	haxorusmegae: {
-		tier: "IBL",
+		tier: "DI",
 	},
 	toucannonmega: {
 		tier: "DVII",
@@ -13835,7 +13835,7 @@ pecharunt: {
 		tier: "DV",
 	},
 	houndoomreduxmega: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	sableyeredux: {
 		tier: "DVIII",
@@ -13847,7 +13847,7 @@ pecharunt: {
 		tier: "DVIII",
 	},
 	mawilereduxmega: {
-		tier: "DI",
+		tier: "DII",
 	},
 	gibleredux: {
 		tier: "LC",
@@ -13868,7 +13868,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	arcaninereduxmega: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	skarmoryredux: {
 		tier: "DV",
@@ -13928,7 +13928,7 @@ pecharunt: {
 		tier: "LC",
 	},
 	noivernredux: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	doduoredux: {
 		tier: "LC",
@@ -13949,7 +13949,7 @@ pecharunt: {
 		tier: "NFE",
 	},
 	hydreigonredux: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	hydreigonreduxmega: {
 		tier: "DI",
@@ -13961,7 +13961,7 @@ pecharunt: {
 		tier: "DII",
 	},
 	mespritredux: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	pawniardredux: {
 		tier: "LC",
@@ -14011,7 +14011,7 @@ pecharunt: {
 		tier: "NFE",
 	},
 	blisseyredux: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	bounsweetredux: {
 		tier: "LC",
@@ -14020,7 +14020,7 @@ pecharunt: {
 		tier: "NFE",
 	},
 	tsareenaredux: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	tsareenareduxmega: {
 		tier: "DIII",
@@ -14035,7 +14035,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	clefablereduxmega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	crabrawlerredux: {
 		tier: "LC",
@@ -14053,7 +14053,7 @@ pecharunt: {
 		tier: "DVII",
 	},
 	infernapereduxmega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	piplupredux: {
 		tier: "LC",
@@ -14074,10 +14074,10 @@ pecharunt: {
 		tier: "NFE",
 	},
 	torterraredux: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	torterrareduxmega: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	mawilereduxg: {
 		tier: "DX",
@@ -14089,10 +14089,10 @@ pecharunt: {
 		tier: "LC",
 	},
 	dewgongredux: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	bariong: {
-		tier: "DII",
+		tier: "DV",
 	},
 	solosisredux: {
 		tier: "LC",
@@ -14107,10 +14107,10 @@ pecharunt: {
 		tier: "DVII",
 	},
 	ribombeeredux: {
-		tier: "DIX",
+		tier: "DII",
 	},
 	ribombeereduxmega: {
-		tier: "DVII",
+		tier: "DII",
 	},
 	trapinchredux: {
 		tier: "LC",
@@ -14200,7 +14200,7 @@ pecharunt: {
 		tier: "DI",
 	},
 	tinkatonmega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	yveltalmega: {
 		tier: "AG",
@@ -14245,7 +14245,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	golisopodmega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	gyaradeath: {
 		tier: "DVI",
@@ -14254,13 +14254,13 @@ pecharunt: {
 		tier: "DI",
 	},
 	gyaradeathmegay: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	incineroarmega: {
 		tier: "DIII",
 	},
 	lucariomegay: {
-		tier: "DII",
+		tier: "DIV",
 	},
 	meowscaradamega: {
 		tier: "DIII",
@@ -14284,7 +14284,7 @@ pecharunt: {
 		tier: "DII",
 	},
 	samurotthisuimega: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	samurottmega: {
 		tier: "DVI",
@@ -14320,7 +14320,7 @@ pecharunt: {
 		tier: "DIII",
 	},
 	polartic: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	polarticbluemoon: {
 		tier: "DVI",
@@ -14332,7 +14332,7 @@ pecharunt: {
 		tier: "DI",
 	},
 	boarlock: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	heliomodo: {
 		tier: "DIII",
@@ -14365,7 +14365,7 @@ pecharunt: {
 		tier: "DIII",
 	},
 	skulberus: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	blizzardmaw: {
 		tier: "DVI",
@@ -14377,7 +14377,7 @@ pecharunt: {
 		tier: "DV",
 	},
 	kaiosea: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	buizelredux: {
 		tier: "LC",
@@ -14395,7 +14395,7 @@ pecharunt: {
 		tier: "Uber",
 	},
 	ironvoca: {
-		tier: "DI",
+		tier: "DII",
 	},
 	morpekyll: {
 		tier: "DIII",
@@ -14407,7 +14407,7 @@ pecharunt: {
 		tier: "DIV",
 	},
 	dracovishmega: {
-		tier: "IBL",
+		tier: "DI",
 	},
 	crawdauntles: {
 		tier: "DI",
@@ -14425,7 +14425,7 @@ pecharunt: {
 		tier: "DV",
 	},
 	flygonmegae: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	crabruiser:{
 		tier: "DVI",
@@ -14541,10 +14541,10 @@ pecharunt: {
 		tier: "DVI",
 	},
 	chariana: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	chariathan: {
-		tier: "DII",
+		tier: "DV",
 	},
 	ferrapin: {
 		tier: "NFE",
@@ -14553,7 +14553,7 @@ pecharunt: {
 		tier: "DIII",
 	},
 	turtillery: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	butteflare: {
 		tier: "NFE",
@@ -14562,7 +14562,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	impsect: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	beebrute: {
 		tier: "NFE",
@@ -14586,7 +14586,7 @@ pecharunt: {
 		tier: "NFE",
 	},
 	rattarule: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	sneerow: {
 		tier: "DVI",
@@ -14712,7 +14712,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	simsalabim: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	vohoodu: {
 		tier: "DII",
@@ -14730,7 +14730,7 @@ pecharunt: {
 		tier: "DII",
 	},
 	mucktribel: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	carnabell: {
 		tier: "DIII",
@@ -14778,7 +14778,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	quadodo: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	dodozen: {
 		tier: "DVI",
@@ -14802,22 +14802,22 @@ pecharunt: {
 		tier: "DVI",
 	},
 	gengone: {
-		tier: "IBL",
+		tier: "DIII",
 	},
 	poltergast: {
-		tier: "IBL",
+		tier: "DI",
 	},
 	grimm: {
 		tier: "IBL",
 	},
 	platnix: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	obsidianix: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	stalagmix: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	lulloo: {
 		tier: "NFE",
@@ -14847,7 +14847,7 @@ pecharunt: {
 		tier: "DVI",
 	},
 	osselobber: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	wraiwrath: {
 		tier: "Uber",
@@ -14883,7 +14883,7 @@ pecharunt: {
 		tier: "DII",
 	},
 	rhyborn: {
-		tier: "DI",
+		tier: "DII",
 	},
 	gogettey: {
 		tier: "DII",
@@ -14901,22 +14901,22 @@ pecharunt: {
 		tier: "DII",
 	},
 	tangrapple: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	kangakid: {
 		tier: "LC",
 	},
 	kangallous: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	kangarutal: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	lordra: {
 		tier: "DVI",
 	},
 	pinnadra: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	searex: {
 		tier: "NFE",
@@ -14928,7 +14928,7 @@ pecharunt: {
 		tier: "DIII",
 	},
 	starwe: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	mrjest: {
 		tier: "NFE",
@@ -14958,25 +14958,25 @@ pecharunt: {
 		tier: "DVI",
 	},
 	magmolten: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	pinsirior: {
 		tier: "DVI",
 	},
 	abyssir: {
-		tier: "DIII",
+		tier: "DV",
 	},
 	taurox: {
 		tier: "NFE",
 	},
 	oxenfree: {
-		tier: "DIV",
+		tier: "DV",
 	},
 	hydrados: {
 		tier: "NFE",
 	},
 	dracosmic: {
-		tier: "DII",
+		tier: "DIV",
 	},
 	quazar: {
 		tier: "Uber",
@@ -15048,10 +15048,10 @@ pecharunt: {
 		tier: "NFE",
 	},
 	frostunus: {
-		tier: "DIII",
+		tier: "DIV",
 	},
 	shockatoo: {
-		tier: "DII",
+		tier: "DIII",
 	},
 	voltduo: {
 		tier: "Uber",
@@ -15072,7 +15072,7 @@ pecharunt: {
 		tier: "Uber",
 	},
 	mewthreee: {
-		tier: "Uber",
+		tier: "IBL",
 	},
 	mewfour: {
 		tier: "AG",
