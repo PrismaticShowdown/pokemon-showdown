@@ -2908,7 +2908,7 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 				(impersonation.isNonstandard && !(rt.has(`+pokemontag:${this.toID(impersonation.isNonstandard)}`) ||
 					rt.has(`+pokemon:${impersonation.id}`) || rt.has(`+basepokemon:${this.toID(impersonation.baseSpecies)}`)))) {
 				return [`All Pok\u00e9mon must either have no nickname or must be nicknamed after a Pok\u00e9mon.`];
-			}*/S
+			}*/
 		},
 		checkCanLearn(move, species, setSources, set) {
 			const impersonation = this.dex.species.get(set.name);
