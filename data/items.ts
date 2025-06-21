@@ -10673,7 +10673,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Ayreian Fearowite",
 		spritenum: 608,
 		megaStone: "Fearow-Ayrei-Mega",
-		megaEvolves: "Fearow",
+		megaEvolves: "Fearow-Ayrei",
 		itemUser: ["Fearow-Ayrei"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
