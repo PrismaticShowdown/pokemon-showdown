@@ -1073,7 +1073,7 @@ export class TeamValidator {
 			problems = problems.concat(format.onValidateSet.call(this, set, format, setHas, teamHas) || []);
 		}
 
-		const nameSpecies = dex.species.get(set.name);
+		/*const nameSpecies = dex.species.get(set.name);
 		if (nameSpecies.exists && nameSpecies.name.toLowerCase() === set.name.toLowerCase()) {
 			// nickname is the name of a species
 			if (nameSpecies.baseSpecies === species.baseSpecies) {
@@ -1084,7 +1084,7 @@ export class TeamValidator {
 				// Nickname Clause
 				problems.push(`${name} must not be nicknamed a different Pokémon species than what it actually is.`);
 			}
-		}
+		}*/
 
 		if (!problems.length) {
 			if (set.gender === '' && !species.gender) {
