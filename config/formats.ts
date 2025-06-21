@@ -28,13 +28,13 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] DI",
 		mod: 'gen9',
-		ruleset: ['Standard NatDex', 'Terastal Clause'],
+		ruleset: ['Standard', 'Evasion Abilities Clause', 'Sleep Moves Clause', '!Sleep Clause Mod'],
 		banlist: ['Uber', 'IBL', 'AG', 'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock', 'Razor Fang', 'Last Respects', 'Shed Tail'],
 	},
 	{
 		name: "[Gen 9] Ubers",
 		mod: 'gen9',
-		ruleset: ['Standard NatDex', 'Terastal Clause'],
+		ruleset: ['Standard'],
 		banlist: ['AG', 'Moody', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects'],
 	},
 	{
