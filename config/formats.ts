@@ -73,7 +73,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen9',
 		ruleset: ['Standard', 'Evasion Abilities Clause', 'Sleep Moves Clause', '!Sleep Clause Mod'],
 		banlist: ['Uber', 'AG', 'IBL', 'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects', 'Shed Tail'],
-		restricted: ['IBL'], 
 	},
 	{
 		name: "[Gen 9] Ubers",

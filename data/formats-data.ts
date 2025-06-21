@@ -702,7 +702,6 @@ kangaskhan: {
 },
 kangaskhanmega: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 },
 horsea: {
 	tier: "LC",
@@ -1969,7 +1968,6 @@ salamence: {
 },
 salamencemega: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 },
 beldum: {
 	tier: "LC",
@@ -2014,7 +2012,6 @@ latiosmega: {
 },
 kyogre: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 
 },
@@ -2035,7 +2032,6 @@ groudonprimal: {
 },
 rayquaza: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 
 },
@@ -2398,7 +2394,6 @@ dialgaorigin: {
 },
 palkia: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 
 },
@@ -2458,27 +2453,22 @@ shayminsky: {
 },
 arceus: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceusbug: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceusdark: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceusdragon: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceuselectric: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceusfairy: {
@@ -2487,27 +2477,22 @@ arceusfairy: {
 },
 arceusfighting: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceusfire: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceusflying: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceusghost: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceusgrass: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceusground: {
@@ -2516,17 +2501,14 @@ arceusground: {
 },
 arceusice: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceuspoison: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceuspsychic: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceusrock: {
@@ -2535,12 +2517,10 @@ arceusrock: {
 },
 arceussteel: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 arceuswater: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 victini: {
@@ -3200,7 +3180,6 @@ reshiram: {
 },
 zekrom: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 
 },
@@ -3226,7 +3205,6 @@ kyuremblack: {
 },
 kyuremwhite: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 
 },
@@ -3543,7 +3521,6 @@ noivern: {
 },
 xerneas: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 },
 xerneasneutral: {
 	isNonstandard: "Custom", // can't be used in battle
@@ -4872,7 +4849,6 @@ koraidon: {
 },
 miraidon: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 	natDexTier: "AG",
 },
@@ -5019,7 +4995,6 @@ ironcrown: {
 },
 terapagos: {
 	tier: "IBL",
-        isNonstandard: 'IBL',
 	doublesTier: "DUber",
 },
 terapagosterastal: {
@@ -5440,7 +5415,6 @@ pecharunt: {
 	},
 	charizarddeltamega: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	squirtledelta: {
 		tier: "LC",
@@ -6065,11 +6039,9 @@ pecharunt: {
 	},
 	mewtwoshadow: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	mewtwoshadowmega: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	poliwrathmega: {
 		tier: "DVII",
@@ -6178,7 +6150,6 @@ pecharunt: {
 	},
 	mewtwoarmored: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	zekromarmored: {
 		tier: "Uber",
@@ -6396,14 +6367,12 @@ pecharunt: {
 	},
 	baariettenuclear: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	baariettemega: {
 		tier: "DVI",
 	},
 	baariettenuclearmega: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	tricwe: {
 		tier: "LC",
@@ -6836,7 +6805,6 @@ pecharunt: {
 	},
 	gyaradosnuclearmega: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	ekansnuclear: {
 		tier: "LC",
@@ -6864,7 +6832,6 @@ pecharunt: {
 	},
 	dramsamanuclearmega: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	dramsamamegadark: {
 		tier: "DIII",
@@ -7695,7 +7662,6 @@ pecharunt: {
 	},
 	oculeus: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	arkhaos: {
 		tier: "AG",
@@ -7768,11 +7734,9 @@ pecharunt: {
 	},
 	chanseyegho: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	blisseyegho: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	meganiumegho: {
 		tier: "DVII",
@@ -8131,11 +8095,9 @@ pecharunt: {
 	},
 	aspheresirius: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	aspherealtair: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	//Procyon and Deneb
 	skarmorail: {
@@ -12349,7 +12311,6 @@ pecharunt: {
 	},
 	emolgahoenn: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	pawniardhoenn: {
 		tier: "LC",
@@ -14848,7 +14809,6 @@ pecharunt: {
 	},
 	grimm: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	platnix: {
 		tier: "DIV",
@@ -15113,7 +15073,6 @@ pecharunt: {
 	},
 	mewthreee: {
 		tier: "IBL",
-        isNonstandard: 'IBL',
 	},
 	mewfour: {
 		tier: "AG",
