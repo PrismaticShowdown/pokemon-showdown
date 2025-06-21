@@ -10847,7 +10847,7 @@ pecharunt: {
 		tier: "DI",
 	},
 	ralmighty: {
-		tier: "IBL",
+		tier: "Uber",
 	},
 	chikoried: {
 		tier: "LC",
