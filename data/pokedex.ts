@@ -68752,7 +68752,7 @@ saboltxenoversal: {
 		heightm: 2,
 		weightkg: 60,
 		color: "Yellow",
-		prevo: "Shockatoo",
+		prevo: "Moltres",
 		evoLevel: 50,
 		evos: ["Inferntri"],
 		tags: ["Sub-Legendary"],
