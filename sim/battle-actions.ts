@@ -1886,25 +1886,26 @@ export class BattleActions {
 	// ==================================================================
 
 	canMegaEvo(pokemon: Pokemon) {
-		const species = pokemon.species; // full form
-		const baseSpecies = pokemon.baseSpecies; // e.g., Bisharp
+		const species = pokemon.baseSpecies;
+		const fullSpecies = pokemon.species;
 		const item = pokemon.getItem();
 
-		// Mega Rayquaza (unchanged)
-		const altForme = baseSpecies.otherFormes && this.dex.species.get(baseSpecies.otherFormes[0]);
+		// Mega Rayquaza check (unchanged)
+		const altForme = species.otherFormes && this.dex.species.get(species.otherFormes[0]);
 		if ((this.battle.gen <= 7 || this.battle.ruleTable.has('+pokemontag:past')) &&
 			altForme?.isMega && altForme?.requiredMove &&
 			pokemon.baseMoves.includes(toID(altForme.requiredMove)) && !item.zMove) {
 			return altForme.name;
 		}
 
-		// Only allow Mega Evolution if this exact form is listed in itemUser
+		// ✅ Enhanced: allow Mega Evolution from custom formes like Empoleon-Redux
 		if (
-			item.itemUser?.includes(species.name) &&
-			item.megaEvolves === baseSpecies.name &&
-			item.megaStone !== species.name
+			item.megaEvolves === species.name || // standard
+			(item.megaEvolves === species.baseSpecies && item.itemUser?.includes(fullSpecies.name))
 		) {
-			return item.megaStone;
+			if (item.megaStone !== fullSpecies.name) {
+				return item.megaStone;
+			}
 		}
 
 		return null;
