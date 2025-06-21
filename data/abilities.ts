@@ -9414,9 +9414,7 @@ end
 			return this.chainModify(1.3);
 		},
 		onDamagingHit(damage, target, source, move) {
-			if (this.checkMoveMakesContact(move, source, target)) {
 				this.damage(source.baseMaxhp / 10, source, source);
-			}
 		},
 		name: "Blood Price",
 		rating: 4,
@@ -9586,17 +9584,13 @@ end
 	},
 	chunkybassline: {
 		onAfterMove(source, target, move) {
+			if (!target) return;
 			if (!move?.flags["sound"]) return;
 			if (!move.succeeded) return;
-			const moveMutations = {
-				basePower: 40,
-			};
-			this.actions.runAdditionalMove(
-				Dex.moves.get("earthquake"),
-				source,
-				target,
-				moveMutations
-			);
+			const cbl = this.dex.deepClone(this.dex.moves.get("earthquake"));
+			move.basePower = 40;
+
+			this.actions.runAdditionalMove(cbl, source, target);
 		},
 		name: "Chunky Bass Line",
 		rating: 3,
@@ -12157,7 +12151,11 @@ end
 			const counterMove = Dex.moves.get("partingshot");
 			this.add("-activate", target, "Above it All");
 			this.effectState.counter = true;
-			this.actions.runMove(counterMove, target, target.getLocOf(source));
+			this.actions.runAdditionalMove(
+				Dex.moves.get("partingshot"),
+				source,
+				target,
+			);
 		},
 		flags: {breakable: 1},
 		name: "Above it All",
