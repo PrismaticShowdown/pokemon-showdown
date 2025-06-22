@@ -10410,7 +10410,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 639,
 		gen: 6,
-		desc: "Increases holer's defenses 1 stage when at 1/2 max HP or less. Single use.",
+		desc: "Increases holder's defenses 1 stage when at 1/2 max HP or less. Single use.",
 	},
 	arbokitec: {
 		name: "Arbokite C",
