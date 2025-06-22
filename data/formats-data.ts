@@ -4845,12 +4845,10 @@ chiyu: {
 koraidon: {
 	tier: "Uber",
 	doublesTier: "DUber",
-	natDexTier: "AG",
 },
 miraidon: {
 	tier: "IBL",
 	doublesTier: "DUber",
-	natDexTier: "AG",
 },
 tinkatink: {
 	tier: "LC",
