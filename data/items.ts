@@ -7715,7 +7715,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	junglecrown: {
 		name: "Jungle Crown",
-		spritenum: 771,
+		spritenum: 236,
 		fling: {
 			basePower: 30,
 		},
@@ -9698,7 +9698,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	cursedsash: {
 		//Gen 7 Disguise as an item, Lowers the user's Def and SpDef by 2 after use
 		name: "Cursed Sash",
-		spritenum: 1, //needs sprite num
+		spritenum: 797, //needs sprite num
 		fling: {
 			basePower: 60,
 		},
@@ -10378,7 +10378,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	//comet
 	decoy: {
 		name: "Decoy",
-		spritenum: 151,
+		spritenum: 798,
 		fling: {
 			basePower: 10,
 		},
@@ -10396,7 +10396,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	aegispolicy: {
 		name: "Aegis Policy",
-		spritenum: 609,
+		spritenum: 800,
 		fling: {
 			basePower: 80,
 		},
@@ -10441,7 +10441,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	blazingorb: {
 		name: "Blazing Orb",
-		spritenum: 187,
+		spritenum: 799,
 		fling: {
 			basePower: 100,
 		},
@@ -10457,7 +10457,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	freezingorb: {
 		name: "Blazing Orb",
-		spritenum: 187,
+		spritenum: 802,
 		fling: {
 			basePower: 100,
 		},
@@ -10473,7 +10473,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	wickedorb: {
 		name: "Wicked Orb",
-		spritenum: 187,
+		spritenum: 801,
 		fling: {
 			basePower: 100,
 		},
@@ -12031,7 +12031,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	//Emerald Z
 	dapperglove: {
 		name: "Dapper Glove",
-		spritenum: 491,
+		spritenum: 795,
 		fling: {
 			basePower: 90,
 		},
@@ -12049,7 +12049,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	//Tectonic
 	strengthherb: {
   		name: "Strength Herb",
-		spritenum: 491,
+		spritenum: 792,
 		onBasePower(basePower, attacker, defender, move) {
     		if (attacker.item !== 'strengthherb') return;
     		if (move.category !== 'Physical') return;
@@ -12085,7 +12085,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	paradoxherb: {
   		name: "Paradox Herb",
-		spritenum: 491,
+		spritenum: 785,
 		onFoeAfterBoost(boost, target, source, effect) {
     		const holder = this.effectState.target;
     		if (!Object.values(boost).some(v => (v ?? 0) > 0)) return;
@@ -12104,7 +12104,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	skillherb: {
   		name: "Skill Herb",
-  		spritenum: 491,
+  		spritenum: 789,
   		onModifyMove(move, attacker) {
     		if (attacker.item !== 'skillherb') return;
     		if (typeof move.accuracy !== 'number' || move.accuracy === 100) return;
@@ -12145,7 +12145,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	blackherb: {
   		name: "Black Herb",
-  		spritenum: 491,
+  		spritenum: 793,
   		onAfterEachBoost(boost, target) {
     		if (!target.isActive || !target.hp || target.fainted) return;
     		if (target.volatiles['blackherbused']) return;
@@ -12181,7 +12181,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	
 	waterballoon: {
     	name: "Water Balloon",
-		spritenum: 713,
+		spritenum: 791,
     	onUpdate(pokemon) {
       		if (
         	pokemon.hp <= pokemon.maxhp / 2 &&
@@ -12202,7 +12202,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
   	},
 	whetstone: {
 		name: "Whetstone",
-		spritenum: 713,
+		spritenum: 796,
 		fling: {
 			basePower: 30,
 		},
@@ -12284,7 +12284,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	mirroredrock: {
 		name: "Mirrored Rock",
-		spritenum: 453,
+		spritenum: 794,
 		fling: {
 			basePower: 10,
 		},
@@ -12293,7 +12293,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	reinforcingrod: {
 		name: "Reinforcing Rod",
-		spritenum: 453,
+		spritenum: 787,
 		fling: {
 			basePower: 10,
 		},
@@ -12302,7 +12302,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	sevenleagueboots: {
 		name: "Seven League Boots",
-		spritenum: 713,
+		spritenum: 788,
 		fling: {
 			basePower: 30,
 		},
@@ -12316,17 +12316,16 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	pinpointrock: {
 		name: "Pin-Point Rock",
-		spritenum: 453,
+		spritenum: 786,
 		fling: {
 			basePower: 10,
 		},
 		num: 283,
 		gen: 4,
 	},
-	//Untamed
-	meleevest: {
-		name: "Melee Vest",
-		spritenum: 581,
+	strikevest: {
+		name: "Strike Vest",
+		spritenum: 790,
 		fling: {
 			basePower: 80,
 		},
@@ -12345,4 +12344,5 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 640,
 		desc: "Holder's Defense is 1.5x, but it can only select damaging moves.",
 	},
+	//Untamed
 };
