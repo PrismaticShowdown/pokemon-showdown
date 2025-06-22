@@ -9664,7 +9664,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	hailstone: {
 		name: "Hailstone",
-		spritenum: 218,
+		spritenum: 804,
 		fling: {
 			basePower: 60,
 		},
@@ -9679,7 +9679,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	waystone: {
 		//Waystone gives the first non ohko attack made by the mon holding it have 100% accuracy(Still affected by accuracy checks afterwards), resets on switch
 		name:"Waystone",
-		spritenum: 1, //needs sprite num
+		spritenum: 806, //needs sprite num
 		fling: {
 			basePower: 60,
 		},
@@ -9713,16 +9713,19 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			}
 		},
 		boosts: {
-			def: -2,
-			spd: -2,
+			atk: -1,
+			def: -1,
+			spa: -1,
+			spd: -1,
+			spe: -1,
 		},
 		num: -7002,
 		gen: 9,
-		desc: "The first hit the holder takes in battle deals 0 neutral damage then lowers defenses 2 stages. Single use.",
+		desc: "The first hit the holder takes in battle deals 0 neutral damage then lowers all stats 1 stage. Single use.",
 	},
 	enigmaorb: {
 		name: "Enigma Orb",
-		spritenum: 1, //needs sprite num
+		spritenum: 805, //needs sprite num
 		fling: {
 			basePower: 60,
 		},
@@ -10456,7 +10459,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		desc: "Holder's Fire-type attacks have 1.2x power.",
 	},
 	freezingorb: {
-		name: "Blazing Orb",
+		name: "Freezing Orb",
 		spritenum: 802,
 		fling: {
 			basePower: 100,
@@ -12049,7 +12052,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	//Tectonic
 	strengthherb: {
   		name: "Strength Herb",
-		spritenum: 792,
+		spritenum: 803,
 		onBasePower(basePower, attacker, defender, move) {
     		if (attacker.item !== 'strengthherb') return;
     		if (move.category !== 'Physical') return;
