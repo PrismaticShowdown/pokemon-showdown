@@ -28,7 +28,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] DI",
 		mod: 'gen9',
-		ruleset: ['Standard NatDex', 'Terastal Clause'],
+		ruleset: ['NatDex Mod', 'Terastal Clause'],
 		banlist: ['Uber', 'AG', 'IBL', 'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects', 'Shed Tail', 'Trick Room'],
 	},
 	{

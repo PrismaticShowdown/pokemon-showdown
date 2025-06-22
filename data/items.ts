@@ -10194,7 +10194,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	clouddust: {
 		name: "Cloud Dust",
-		spritenum: 764,
+		spritenum: 765,
 		shortDesc: "Suppresses all weather effects while the holder is active.",
 		desc: "While the holder is active, all weather effects are suppressed.",
 		gen: 9,
@@ -10277,7 +10277,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	polishedsphere: {
 		name: "Polished Sphere",
-		spritenum: 766,
+		spritenum: 767,
 		fling: {
 			basePower: 90,
 		},
@@ -10323,7 +10323,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	thirdeye: {
 		name: "Third Eye",
-		spritenum: 765,
+		spritenum: 766,
 		onStart(pokemon) {
 		  // When the holder enters, reveal all opposing Pokémon's abilities
 		  for (const target of pokemon.foes()) {
@@ -10349,7 +10349,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},	  
 	xrayspecs: {
 		name: "X-Ray Specs",
-		spritenum: 767,
+		spritenum: 768,
 		// When the holder switches in, reveal opponent items
 		onStart(pokemon) {
 		  for (const target of pokemon.foes()) {
