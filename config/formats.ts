@@ -46,13 +46,13 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	{
 		name: "[Gen 9] DIV",
 		mod: 'gen9',
-		ruleset: ['[Gen 9] DIV'],
+		ruleset: ['[Gen 9] DIII'],
 		banlist: ['DIII', 'IVBL'],
 	},
 	{
 		name: "[Gen 9] DV",
 		mod: 'gen9',
-		ruleset: ['[Gen 9] DV'],
+		ruleset: ['[Gen 9] DIV'],
 		banlist: ['DIV', 'DVBL'],
 	},
 	{
