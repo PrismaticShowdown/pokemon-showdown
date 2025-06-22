@@ -10958,7 +10958,7 @@ pecharunt: {
 		tier: "DI",
 	},
 	amalgaformzeta: {
-		tier: "DI",
+		tier: "DIV",
 	},
 	amalgaformlambda: {
 		tier: "DII",
