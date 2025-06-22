@@ -10178,7 +10178,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	//sage
 	boltorb: {
 		name: "Bolt Orb",
-		spritenum: 742,
+		spritenum: 763,
 		fling: {
 			basePower: 30,
 			status: 'par',
@@ -10194,6 +10194,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	clouddust: {
 		name: "Cloud Dust",
+		spritenum: 764,
 		shortDesc: "Suppresses all weather effects while the holder is active.",
 		desc: "While the holder is active, all weather effects are suppressed.",
 		gen: 9,
@@ -10224,7 +10225,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	corruptedseed: {
 		name: "Corrupted Seed",
-		spritenum: 292,
+		spritenum: 764,
 		onTryHeal(damage, target, source, effect) {
 		  // This only runs on the *recipient* of healing
 		  // So we check if the *source* is holding the Corrupted Seed
@@ -10244,7 +10245,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	foulrock: {
 		name: "Foul Rock",
-		spritenum: 746,
+		spritenum: 762,
 		fling: {
 			basePower: 60,
 		},
@@ -10276,7 +10277,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	polishedsphere: {
 		name: "Polished Sphere",
-		spritenum: 747,
+		spritenum: 766,
 		fling: {
 			basePower: 90,
 		},
@@ -10322,7 +10323,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	thirdeye: {
 		name: "Third Eye",
-		spritenum: 706,
+		spritenum: 765,
 		onStart(pokemon) {
 		  // When the holder enters, reveal all opposing Pokémon's abilities
 		  for (const target of pokemon.foes()) {
@@ -10348,7 +10349,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},	  
 	xrayspecs: {
 		name: "X-Ray Specs",
-		spritenum: 539,
+		spritenum: 767,
 		// When the holder switches in, reveal opponent items
 		onStart(pokemon) {
 		  for (const target of pokemon.foes()) {
