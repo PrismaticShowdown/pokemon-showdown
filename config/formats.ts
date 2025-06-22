@@ -23,37 +23,43 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	///////////////////////////////////////////////////////////////////
 
 	{
-		section: "S/V Singles",
+		section: "NatDex Singles",
 	},
 	{
-		name: "[Gen 9] DI",
+		name: "[Gen 9] National Dex DI",
 		mod: 'gen9',
-		ruleset: ['NatDex Mod', 'Terastal Clause'],
-		banlist: ['Uber', 'AG', 'IBL', 'Arena Trap', 'Moody', 'Shadow Tag', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects', 'Shed Tail', 'Trick Room'],
+		ruleset: ['Standard NatDex', 'Terastal Clause'],
+		banlist: [
+			'ND Uber', 'ND AG', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock',
+			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
+		],
 	},
 	{
-		name: "[Gen 9] DII",
+		name: "[Gen 9] National Dex DII",
 		mod: 'gen9',
-		ruleset: ['[Gen 9] DI'],
+		ruleset: ['[Gen 9] National Dex DI'],
 		banlist: ['DI', 'IIBL'],
 	},
 	{
-		name: "[Gen 9] DIII",
+		name: "[Gen 9] National Dex DIII",
 		mod: 'gen9',
-		ruleset: ['[Gen 9] DII'],
+		ruleset: ['[Gen 9] National Dex DII'],
 		banlist: ['DII', 'IIIBL'],
 	},
 	{
-		name: "[Gen 9] DIV",
+		name: "[Gen 9] National Dex DIV",
 		mod: 'gen9',
-		ruleset: ['[Gen 9] DIII'],
+		ruleset: ['[Gen 9] National Dex DIII'],
 		banlist: ['DIII', 'IVBL'],
 	},
 	{
-		name: "[Gen 9] DV",
+		name: "[Gen 9] National Dex DV",
 		mod: 'gen9',
-		ruleset: ['[Gen 9] DIV'],
+		ruleset: ['[Gen 9] National Dex DIV'],
 		banlist: ['DIV', 'VBL'],
+	},
+	{
+		section: "S/V Singles",
 	},
 	{
 		name: "[Gen 9] Random Battle",
