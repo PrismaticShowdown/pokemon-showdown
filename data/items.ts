@@ -7695,7 +7695,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	//Fangame Items
 	darkrock: {
 		name: "Dark Rock",
-		spritenum: 740,
+		spritenum: 776,
 		fling: {
 			basePower: 60,
 		},
@@ -7705,7 +7705,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	trickrock: {
 		name: "Trick Rock",
-		spritenum: 741,
+		spritenum: 777,
 		fling: {
 			basePower: 60,
 		},
@@ -7731,7 +7731,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
   deltavolcaronaarmor: {
 		name: "Delta Volcarona Armor",
-		spritenum: 828,
+		spritenum: 772,
 		onTakeItem: false,
 		forcedForme: "Volcarona-Delta-Armored",
 		num: 787,
@@ -7739,7 +7739,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	flygonarmor: {
 		name: "Flygon Armor",
-		spritenum: 825,
+		spritenum: 773,
 		onTakeItem: false,
 		forcedForme: "Flygon-Armored",
 		num: 787,
@@ -7747,7 +7747,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	zekromarmor: {
 		name: "Zekrom Armor",
-		spritenum: 827,
+		spritenum: 779,
 		onTakeItem: false,
 		forcedForme: "Zekrom-Armored",
 		num: 787,
@@ -7755,7 +7755,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	leavannyarmor: {
 		name: "Leavanny Armor",
-		spritenum: 826,
+		spritenum: 774,
 		onTakeItem: false,
 		forcedForme: "Leavanny-Armored",
 		num: 787,
@@ -7763,7 +7763,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	mewtwoarmor: {
 		name: "Mewtwo Armor",
-		spritenum: 829,
+		spritenum: 775,
 		onTakeItem: false,
 		forcedForme: "Mewtwo-Armored",
 		num: 787,
@@ -7771,7 +7771,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	tyranitararmor: {
 		name: "Tyranitar Armor",
-		spritenum: 824,
+		spritenum: 778,
 		onTakeItem: false,
 		forcedForme: "Tyranitar-Armored",
 		num: 787,
@@ -7831,7 +7831,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	pinksoap: {
 		name: "Pink Soap",
-		spritenum: 739,
+		spritenum: 770,
 		fling: {
 			basePower: 90,
 		},
@@ -7953,7 +7953,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	crystalpiecearceus: {
 		name: "Crystal Piece Arceus",
-		spritenum: 752 + 7,
+		spritenum: 771,
 		itemUser: ["Arceus"],
 		onSwitchIn(pokemon) {
 			if (pokemon.isActive && pokemon.baseSpecies.name === 'Arceus' && !pokemon.transformed) {
@@ -7969,7 +7969,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	crystalpiecegiratina: {
 		name: "Crystal Piece Giratina",
-		spritenum: 752 + 7,
+		spritenum: 771,
 		itemUser: ["Giratina"],
 		onSwitchIn(pokemon) {
 			if (pokemon.isActive && pokemon.baseSpecies.name === 'Giratina' && !pokemon.transformed) {
@@ -7985,7 +7985,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	crystalpieceregigigas: {
 		name: "Crystal Piece Regigigas",
-		spritenum: 752 + 7,
+		spritenum: 771,
 		onSwitchIn(pokemon) {
 			if (pokemon.isActive && pokemon.baseSpecies.name === 'Regigigas' && !pokemon.transformed) {
 				pokemon.formeChange('Regigigas-Primal', this.effect, true);
@@ -10255,7 +10255,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	iveolite: {
 		name: "Iveolite",
-		spritenum: 743,
+		spritenum: 769,
 		fling: {
 			basePower: 40,
 		},
@@ -12047,6 +12047,159 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		shortDesc: "If held by a Fistiscuff or an Elegent, its Attack is doubled.",
 	},
 	//Tectonic
+	strengthherb: {
+  		name: "Strength Herb",
+		spritenum: 491,
+		onBasePower(basePower, attacker, defender, move) {
+    		if (attacker.item !== 'strengthherb') return;
+    		if (move.category !== 'Physical') return;
+
+    		this.debug('Strength Herb boost');
+    		attacker.setItem('');
+    		attacker.lastItem = 'strengthherb' as ID;
+    		this.add('-enditem', attacker, 'Strength Herb');
+    		this.runEvent('AfterUseItem', attacker, null, null, 'strengthherb');
+    			return this.chainModify(1.3);
+  		},
+  		num: 258,
+  		gen: 9,
+  		shortDesc: "Boosts the power of a physical move by 30%. Single-use.",
+	},
+	energyherb: {
+  		name: "Energy Herb",
+  		spritenum: 780,
+  		onChargeMove(pokemon, target, move) {
+    		// Only affects moves that normally require recharging
+    		if (!move.flags['recharge']) return;
+    		if (pokemon.item !== 'energyherb') return;
+
+    		this.add('-item', pokemon, 'Energy Herb', '[used]');
+    		pokemon.removeVolatile('mustrecharge'); // Prevent the recharge turn
+    		pokemon.setItem('');
+    		pokemon.lastItem = 'energyherb' as ID;
+   			this.runEvent('AfterUseItem', pokemon, null, null, 'energyherb');
+  		},
+		num: 258,
+		gen: 9,
+ 		shortDesc: "Holder skips the recharge turn after using a move. Single-use.",
+	},
+	paradoxherb: {
+  		name: "Paradox Herb",
+		spritenum: 491,
+		onFoeAfterBoost(boost, target, source, effect) {
+    		const holder = this.effectState.target;
+    		if (!Object.values(boost).some(v => (v ?? 0) > 0)) return;
+    		if (!holder || holder.fainted || holder.item !== 'paradoxherb') return;
+
+    		this.add('-item', holder, 'Paradox Herb', '[used]');
+    		target.clearBoosts();
+    		this.add('-clearboost', target);
+    		holder.setItem('');
+   			holder.lastItem = 'paradoxherb' as ID;
+    		this.runEvent('AfterUseItem', holder, null, null, 'paradoxherb');
+  		},
+  		num: 258,
+   		gen: 9,
+  		shortDesc: "If a foe boosts stats, resets their boosts. Single-use.",
+	},
+	skillherb: {
+  		name: "Skill Herb",
+  		spritenum: 491,
+  		onModifyMove(move, attacker) {
+    		if (attacker.item !== 'skillherb') return;
+    		if (typeof move.accuracy !== 'number' || move.accuracy === 100) return;
+
+    		move.accuracy = true;
+    		attacker.setItem('');
+    		attacker.lastItem = 'skillherb' as ID;
+    		this.add('-enditem', attacker, 'Skill Herb');
+    		this.runEvent('AfterUseItem', attacker, null, null, 'skillherb');
+  		},
+		num: 258,
+  		gen: 9,
+  		shortDesc: "Ensures a less-than-100% accuracy move hits. Single-use.",
+	},
+	agilityherb: {
+  		name: "Agility Herb",
+		spritenum: 491,
+  		onBeforeMove(pokemon) {
+    		if (pokemon.item !== 'agilityherb') return;
+
+    		this.add('-item', pokemon, 'Agility Herb', '[used]');
+    		pokemon.addVolatile('agilityherb');
+
+    		pokemon.setItem('');
+    		pokemon.lastItem = 'agilityherb' as ID;
+    		this.runEvent('AfterUseItem', pokemon, null, null, 'agilityherb');
+  		},
+
+  		condition: {
+    		duration: 1,
+    		onModifySpe(spe) {
+      			return this.chainModify(2);
+    		},
+  		},
+		num: 258,
+  		gen: 9,
+  		shortDesc: "Doubles Speed for one turn when the holder uses a move. Single use.",
+	},
+	blackherb: {
+  		name: "Black Herb",
+  		spritenum: 491,
+  		onAfterEachBoost(boost, target) {
+    		if (!target.isActive || !target.hp || target.fainted) return;
+    		if (target.volatiles['blackherbused']) return;
+
+   			 // List of all possible stat keys
+    		const statKeys = ['atk', 'def', 'spa', 'spd', 'spe', 'accuracy', 'evasion'] as const;
+
+    		const appliedStats: Partial<BoostsTable> = {};
+    		for (const stat of statKeys) {
+      			const change = boost[stat];
+      			if (change !== undefined && change < 0) {
+        			appliedStats[stat] = change;
+      			}
+    		}
+
+    		if (!Object.keys(appliedStats).length) return;
+
+    		for (const foe of target.side.foe.active) {
+      			if (!foe || foe.fainted) continue;
+      			this.boost(appliedStats, foe, target, null, true);
+    		}
+
+    		this.add('-enditem', target, 'Black Herb');
+    		target.setItem('');
+   			target.lastItem = 'blackherb' as ID;
+    		target.addVolatile('blackherbused');
+    		this.runEvent('AfterUseItem', target, null, null, 'blackherb');
+  		},
+		num: 258,
+		gen: 9,
+		shortDesc: "When this Pokémon's stats are lowered, foes get the same drops. One-time use.",
+	},
+	
+	waterballoon: {
+    	name: "Water Balloon",
+		spritenum: 713,
+    	onUpdate(pokemon) {
+      		if (
+        	pokemon.hp <= pokemon.maxhp / 2 &&
+        	pokemon.item === 'waterballoon' &&
+        	!pokemon.volatiles['aquaring']
+      		)	{
+        	this.add('-item', pokemon, 'Water Balloon', '[used]');
+        	this.add('-activate', pokemon, 'item: Water Balloon', '[aqua ring]');
+        	pokemon.addVolatile('aquaring');
+       		pokemon.setItem('');
+			pokemon.lastItem = 'waterballoon' as ID;
+        	this.runEvent('AfterUseItem', pokemon, null, null, 'waterballoon');
+    		}
+    	},
+		num: 258,
+		gen: 9,
+   		shortDesc: "At 1/2 HP or less, the holder gains Aqua Ring. One-time use.",
+  	},
 	whetstone: {
 		name: "Whetstone",
 		spritenum: 713,
@@ -12067,7 +12220,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	frostorb: {
 		name: "Frost Orb",
-		spritenum: 145,
+		spritenum: 781,
 		fling: {
 			basePower: 30,
 			status: 'fbt',
@@ -12083,7 +12236,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	hivisjacket: {
 		name: "Hi-Viz Jacket",
-		spritenum: 417,
+		spritenum: 782,
 		fling: {
 			basePower: 60,
 		},
@@ -12096,9 +12249,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 540,
 		gen: 5,
 	},
-	intellectualherb: {
-		name: "Intellectual Herb",
-		spritenum: 713,
+	intellectherb: {
+		name: "Intellect Herb",
+		spritenum: 783,
 		fling: {
 			basePower: 30,
 		},
@@ -12115,7 +12268,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	lumberaxe: {
 		name: "Lumber Axe",
-		spritenum: 417,
+		spritenum: 784,
 		fling: {
 			basePower: 60,
 		},
@@ -12160,23 +12313,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 1118,
 		gen: 8,
 		desc: "Holder's Speed is 1.1x",
-	},
-	strengthherb: {
-		name: "Strength Herb",
-		spritenum: 713,
-		fling: {
-			basePower: 30,
-		},
-		onBasePowerPriority: 15,
-		onBasePower(basePower, user, target, move) {
-			if (move && move.category === 'Physical') {
-				target.useItem();
-				return this.chainModify(1.3);
-			}
-		},
-		num: 1118,
-		gen: 8,
-		desc: "Gives a holder's Physical attack has 1.3x power. Single Use",
 	},
 	pinpointrock: {
 		name: "Pin-Point Rock",
