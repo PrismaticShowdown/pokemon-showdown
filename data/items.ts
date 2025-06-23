@@ -12124,7 +12124,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	agilityherb: {
   		name: "Agility Herb",
-		spritenum: 491,
+		spritenum: 792,
   		onBeforeMove(pokemon) {
     		if (pokemon.item !== 'agilityherb') return;
 
