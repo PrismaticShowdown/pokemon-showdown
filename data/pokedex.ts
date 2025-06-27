@@ -65497,7 +65497,7 @@ saboltxenoversal: {
 		name: "Iron Heart",
 		types: ["Steel", "Bug"],
 		gender: "N",
-		baseStats: {hp: 70, atk: 122, def: 92, spa: 74, spd: 92, spe: 112},
+		baseStats: {hp: 78, atk: 122, def: 92, spa: 74, spd: 92, spe: 112},
 		abilities: {0: "Parry", 1: "Iron Fist", H: "Mold Breaker", S: "Quark Drive"},
 		heightm: 1.4,
 		weightkg: 35,
