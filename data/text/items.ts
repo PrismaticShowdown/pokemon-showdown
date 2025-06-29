@@ -2437,4 +2437,11 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Vile Vial",
 		shortDesc: "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.",
 	},
+	//New Items
+	hivizjacket: {
+		name: "Hi-Viz Jacket",
+		shortDesc: "If holder is hit by a Special Attack, the attacker loses 1/6 of its max HP.",
+
+		damage: "  [POKEMON] was hurt by the Hi-Viz!",
+	},
 };

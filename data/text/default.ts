@@ -372,4 +372,20 @@ export const DefaultText: { [id: IDEntry]: DefaultText } = {
 	crash: {
 		damage: "  [POKEMON] kept going and crashed!",
 	},
+	//New Status
+	bld: {
+		start: "  [POKEMON] is bleeding!",
+		alreadyStarted: "  [POKEMON] is already bleeding!",
+		end: "  [POKEMON]'s bleed was healed!",
+		endFromItem: "  [POKEMON]'s [ITEM] healed its bleeding!",
+		damage: "  [POKEMON] was hurt by its bleeding!",
+	},
+	fbt: {
+		start: "  [POKEMON] was frostbitten!",
+		startFromItem: "  [POKEMON] was frostbitten by the [ITEM]!",
+		alreadyStarted: "  [POKEMON] is already frostbitten!",
+		end: "  [POKEMON]'s frostbite was healed!",
+		endFromItem: "  [POKEMON]'s [ITEM] healed its frostbite!",
+		damage: "  [POKEMON] was hurt by its frostbite!",
+	},
 };

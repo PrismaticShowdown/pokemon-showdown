@@ -7736,6 +7736,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		forcedForme: "Volcarona-Delta-Armored",
 		num: 787,
 		gen: 6,
+		shortDesc: "Changes Volcarona-Delta to its Armored form.",
 	},
 	flygonarmor: {
 		name: "Flygon Armor",
@@ -7744,6 +7745,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		forcedForme: "Flygon-Armored",
 		num: 787,
 		gen: 6,
+		shortDesc: "Changes Flygon to its Armored form.",
 	},
 	zekromarmor: {
 		name: "Zekrom Armor",
@@ -7752,6 +7754,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		forcedForme: "Zekrom-Armored",
 		num: 787,
 		gen: 6,
+		shortDesc: "Changes Zekrom to its Armored form.",
+
 	},
 	leavannyarmor: {
 		name: "Leavanny Armor",
@@ -7760,6 +7764,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		forcedForme: "Leavanny-Armored",
 		num: 787,
 		gen: 6,
+		shortDesc: "Changes Leavanny to its Armored form.",
 	},
 	mewtwoarmor: {
 		name: "Mewtwo Armor",
@@ -7768,6 +7773,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		forcedForme: "Mewtwo-Armored",
 		num: 787,
 		gen: 6,
+		shortDesc: "Changes Mewtwo to its Armored form.",
 	},
 	tyranitararmor: {
 		name: "Tyranitar Armor",
@@ -7776,6 +7782,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		forcedForme: "Tyranitar-Armored",
 		num: 787,
 		gen: 6,
+		shortDesc: "Changes Tyranitar to its Armored form.",
 	},
 	longclub: {
 		name: "Long Club",
@@ -7810,6 +7817,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 1103,
 		gen: 8,
+		shortDesc: "Changes certain Pokemon to their Terrestrial forme.",
 	},
 	xenoversering: {
 		name: "Xenoverse Ring",
@@ -7828,6 +7836,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 1103,
 		gen: 8,
+		shortDesc: "Changes certain Pokemon to their Xenoversal forme.",
 	},
 	pinksoap: {
 		name: "Pink Soap",
@@ -11610,6 +11619,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 660,
 		gen: 6,
+		shortDesc: "If held by an Abomasnow, this item allows it to Mega Evolve in battle.",
 	},
 	chienpaoite: {
 		name: "Chien Paoite",
@@ -12293,6 +12303,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 283,
 		gen: 4,
+		shortDesc: "Holder's use of Moonglow lasts 8 turns instead of 5.",
 	},
 	reinforcingrod: {
 		name: "Reinforcing Rod",
@@ -12302,6 +12313,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 283,
 		gen: 4,
+		shortDesc: "Holder's use of Room moves last 8 turns instead of 5.",
 	},
 	sevenleagueboots: {
 		name: "Seven League Boots",
@@ -12325,6 +12337,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 283,
 		gen: 4,
+		shortDesc: "Holder's use of Eclipse lasts 8 turns instead of 5.",
 	},
 	strikevest: {
 		name: "Strike Vest",
